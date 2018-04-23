@@ -1,8 +1,29 @@
 [
   {
-    "#valid_tag": "#adm2+code",
+    "#valid_tag": "#status",
     "#valid_severity": "error",
-    "#valid_required": true
+    "#valid_value+list": "Ongoing|Complete|Planned|Concept|No Data",
+    "#description": "Check Status with list of values"
+  },
+  {
+    "#valid_tag": "#adm2+code",
+    "#valid_severity": "warning",
+    "#valid_value+url": "https://docs.google.com/spreadsheets/d/1qJGAMqXctLA9udPbvZBsEvZAQZFRuSmtbEHqIFCA0eI/edit?usp=sharing",
+    "#valid_value+target_tag": "#adm2+code",
+    "#description": "Adm2 warning"
+  },
+  {
+    "#valid_tag": "#adm2+code",
+    "#valid_severity": "warning",
+    "#valid_correlation": "adm2+name",
+    "#valid_value+url": "https://docs.google.com/spreadsheets/d/1qJGAMqXctLA9udPbvZBsEvZAQZFRuSmtbEHqIFCA0eI/edit?usp=sharing",
+    "#description": "Adm2 Correlation via esternal link"
+  },
+  {
+    "#valid_tag": "#adm2+code",
+    "#valid_severity": "warning",
+    "#valid_correlation": "adm2+name",
+    "#description": "Adm2 Correlation in file"
   },
   {
     "#valid_tag": "#country+code",
