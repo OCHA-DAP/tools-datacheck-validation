@@ -2,6 +2,6 @@
   {
     "#valid_tag": "#adm2+code",
     "#valid_severity": "error",
-    "#value_required": true
+    "#valid_required": true
   }
 ]
