@@ -3,5 +3,9 @@
     "#valid_tag": "#adm2+code",
     "#valid_severity": "error",
     "#valid_required": true
+  },
+  {
+    "#valid_tag": "#country+code",
+    "#valid_value+list": "BEN|BFA|CMR"
   }
 ]
