@@ -26,7 +26,11 @@
     "#description": "Adm2 Correlation in file"
   },
   {
-    "#valid_tag": "#country+code",
-    "#valid_value+list": "BEN|BFA|CMR"
+    "#valid_tag": "*",
+    "#valid_datatype+consistent": true
+  },
+  {
+    "#valid_tag": "*",
+    "#valid_value+whitespace": true
   }
 ]
