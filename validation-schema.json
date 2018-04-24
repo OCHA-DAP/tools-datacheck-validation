@@ -5,6 +5,7 @@
   },
   {
     "#valid_tag": "*",
-    "#valid_value+whitespace": true
+    "#valid_value+whitespace": true,
+    "#valid_severity": "warning"
   }
 ]
