@@ -22,5 +22,11 @@
     "#valid_correlation": "adm1+name",
     "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/gin-adm1.csv",
     "#description": "Adm1 that doesn't correlate code-name with itos service"
+  },
+  {
+    "#valid_tag": "#adm1+code",
+    "#valid_severity": "error",
+    "#valid_correlation": "adm1+name",
+    "#description": "Adm1 that doesn't correlate code-name in data source"
   }
 ]
