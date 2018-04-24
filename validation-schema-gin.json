@@ -66,25 +66,5 @@
     "#valid_severity": "error",
     "#valid_correlation": "adm3+name",
     "#description": "Adm3 that doesn't correlate code-name in data source"
-  },
-  {
-    "#valid_tag": "#adm4+code",
-    "#valid_severity": "error",
-    "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/gin-adm4.csv",
-    "#valid_value+target_tag": "#adm4+code",
-    "#description": "Adm4 that doesn't match itos service"
-  },
-  {
-    "#valid_tag": "#adm4+code",
-    "#valid_severity": "error",
-    "#valid_correlation": "adm4+name",
-    "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/gin-adm4.csv",
-    "#description": "Adm4 that doesn't correlate code-name with itos service"
-  },
-  {
-    "#valid_tag": "#adm4+code",
-    "#valid_severity": "error",
-    "#valid_correlation": "adm4+name",
-    "#description": "Adm4 that doesn't correlate code-name in data source"
   }
 ]
