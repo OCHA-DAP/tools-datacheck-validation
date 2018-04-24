@@ -1,11 +1,13 @@
 [
   {
     "#valid_tag": "*",
-    "#valid_datatype+consistent": true
+    "#valid_datatype+consistent": true,
+    "#valid_severity": "error"
   },
   {
     "#valid_tag": "*",
-    "#valid_value+whitespace": true
+    "#valid_value+whitespace": true,
+    "#valid_severity": "warning"
   },
   {
     "#valid_tag": "#adm1+code",
