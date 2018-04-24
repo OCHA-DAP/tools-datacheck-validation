@@ -66,8 +66,7 @@
     "#valid_severity": "error",
     "#valid_correlation": "adm3+name",
     "#description": "Adm3 that doesn't correlate code-name in data source"
-  }
-,
+  },
   {
     "#valid_tag": "#adm4+code",
     "#valid_severity": "error",
