@@ -1,0 +1,62 @@
+[
+  {
+    "#valid_tag": "#adm1+code",
+    "#valid_severity": "error",
+    "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/gin-adm1.csv",
+    "#valid_value+target_tag": "#adm1+code",
+    "#description": "Adm1 that doesn't match itos service"
+  },
+  {
+    "#valid_tag": "#adm1+code",
+    "#valid_severity": "error",
+    "#valid_correlation": "adm1+name",
+    "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/gin-adm1.csv",
+    "#description": "Adm1 that doesn't correlate code-name with itos service"
+  },
+  {
+    "#valid_tag": "#adm1+code",
+    "#valid_severity": "error",
+    "#valid_correlation": "adm1+name",
+    "#description": "Adm1 that doesn't correlate code-name in data source"
+  },
+  {
+    "#valid_tag": "#adm2+code",
+    "#valid_severity": "error",
+    "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/gin-adm2.csv",
+    "#valid_value+target_tag": "#adm2+code",
+    "#description": "Adm2 that doesn't match itos service"
+  },
+  {
+    "#valid_tag": "#adm2+code",
+    "#valid_severity": "error",
+    "#valid_correlation": "adm2+name",
+    "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/gin-adm2.csv",
+    "#description": "Adm2 that doesn't correlate code-name with itos service"
+  },
+  {
+    "#valid_tag": "#adm2+code",
+    "#valid_severity": "error",
+    "#valid_correlation": "adm2+name",
+    "#description": "Adm2 that doesn't correlate code-name in data source"
+  },
+  {
+    "#valid_tag": "#adm3+code",
+    "#valid_severity": "error",
+    "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/gin-adm3.csv",
+    "#valid_value+target_tag": "#adm3+code",
+    "#description": "Adm3 that doesn't match itos service"
+  },
+  {
+    "#valid_tag": "#adm3+code",
+    "#valid_severity": "error",
+    "#valid_correlation": "adm3+name",
+    "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/gin-adm3.csv",
+    "#description": "Adm3 that doesn't correlate code-name with itos service"
+  },
+  {
+    "#valid_tag": "#adm3+code",
+    "#valid_severity": "error",
+    "#valid_correlation": "adm3+name",
+    "#description": "Adm3 that doesn't correlate code-name in data source"
+  }
+]
