@@ -98,7 +98,7 @@
     "#valid_tag": "#adm5+code",
     "#valid_severity": "error",
     "#valid_correlation": "adm5+name",
-    "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/{{#country+code}}-adm5.csv",
+    "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/xxx-adm5.csv",
     "#description": "Adm5 that doesn't correlate code-name with itos service"
   },
   {
