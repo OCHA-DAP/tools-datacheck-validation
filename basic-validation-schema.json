@@ -2,11 +2,13 @@
   {
     "#valid_tag": "*",
     "#valid_datatype+consistent": true,
-    "#valid_severity": "error"
+    "#valid_severity": "error",
+    "label":"this is a description and test"
   },
   {
     "#valid_tag": "*",
     "#valid_value+whitespace": true,
-    "#valid_severity": "warning"
+    "#valid_severity": "warning",
+    "label":"this is a desc"
   }
 ]
