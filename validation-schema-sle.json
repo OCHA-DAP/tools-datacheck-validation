@@ -15,7 +15,7 @@
     "#valid_tag": "#adm1+code",
     "#valid_severity": "error",
     "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/sle-adm1.csv",
-    "#valid_value+target_tag": "#adm1+code",
+    "#valid_value+target_tag": "#adm1+code+ref",
     "#description": "Invalid p-code found"
   },
   {
