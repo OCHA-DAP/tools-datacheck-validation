@@ -6,7 +6,7 @@ install:
 - ls -l pcodes/*json
 script:
 - cd run
-- python3 run.py
+- python3 schemacreator.py
 - cp index.html ../pcodes/
 deploy:
   provider: pages
