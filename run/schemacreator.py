@@ -5,7 +5,6 @@ from os.path import join
 
 from bs4 import BeautifulSoup
 from hdx.utilities.downloader import Download
-from hdx.utilities.loader import load_json
 
 start_url = 'http://gistmaps.itos.uga.edu/arcgis/rest/services/COD_External'
 base_url = 'http://gistmaps.itos.uga.edu/arcgis/rest/services/COD_External/%s_pcode/FeatureServer'
@@ -16,7 +15,7 @@ def get_rule(rule_template, iso3, adm=None):
     for key in rule_template:
         value = rule_template[key]
         if isinstance(value, str):
-            value = value.replace('{ISO}', iso3)
+            value = value.replace('{ISO}', iso3.lower())
             if adm:
                 value = value.replace('{ADM}', adm)
         rule[key] = value
@@ -44,11 +43,19 @@ with Download() as downloader:
                 adminlevels.append(str(element)[-1])
             print(adminlevels)
             schema = list()
+            admrules = list()
             for rule_template in template:
                 if '{ADM}' in str(rule_template):
-                    for adminlevel in adminlevels:
-                        schema.append(get_rule(rule_template, iso3, adminlevel))
+                    admrules.append(rule_template)
                 else:
+                    for adminlevel in adminlevels:
+                        for admrule in admrules:
+                            schema.append(get_rule(admrule, iso3, adminlevel))
+                    admrules = list()
                     schema.append(get_rule(rule_template, iso3))
-            with open(join('pcodes', 'validation-schema-pcodes-%s.json' % iso3), 'w') as outfile:
+            for adminlevel in adminlevels:
+                for admrule in admrules:
+                    schema.append(get_rule(admrule, iso3, adminlevel))
+            with open(join('pcodes', 'validation-schema-pcodes-%s.json' % iso3.lower()), 'w') as outfile:
                 json.dump(schema, outfile, indent=2)
+
