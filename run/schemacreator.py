@@ -15,7 +15,7 @@ def get_rule(rule_template, iso3, adm=None):
     for key in rule_template:
         value = rule_template[key]
         if isinstance(value, str):
-            value = value.replace('{ISO}', iso3)
+            value = value.replace('{ISO}', iso3.lower())
             if adm:
                 value = value.replace('{ADM}', adm)
         rule[key] = value
@@ -56,6 +56,6 @@ with Download() as downloader:
             for adminlevel in adminlevels:
                 for admrule in admrules:
                     schema.append(get_rule(admrule, iso3, adminlevel))
-            with open(join('pcodes', 'validation-schema-pcodes-%s.json' % iso3), 'w') as outfile:
+            with open(join('pcodes', 'validation-schema-pcodes-%s.json' % iso3.lower()), 'w') as outfile:
                 json.dump(schema, outfile, indent=2)
 
