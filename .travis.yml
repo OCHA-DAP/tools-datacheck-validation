@@ -4,7 +4,7 @@ python:
 - '3.6'
 install:
 - ls -l pcodes/*json
-- pip install --user -r requirements.txt
+- pip install -r requirements.txt
 script:
 - cd run
 - python3 schemacreator.py
