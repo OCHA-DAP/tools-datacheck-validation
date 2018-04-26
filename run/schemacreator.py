@@ -56,6 +56,6 @@ with Download() as downloader:
             for adminlevel in adminlevels:
                 for admrule in admrules:
                     schema.append(get_rule(admrule, iso3, adminlevel))
-            with open(join('pcodes', 'validation-schema-pcodes-%s.json' % iso3.lower()), 'w') as outfile:
+            with open(join('..','pcodes', 'validation-schema-pcodes-%s.json' % iso3.lower()), 'w') as outfile:
                 json.dump(schema, outfile, indent=2)
 
