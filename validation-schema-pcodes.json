@@ -1,0 +1,41 @@
+[
+  {
+    "#valid_tag": "*",
+    "#valid_datatype+consistent": true,
+    "#valid_severity": "error",
+    "#description": "Unexpected data type (number or string) found"
+  },
+  {
+    "#valid_tag": "*",
+    "#valid_value+whitespace": true,
+    "#valid_severity": "warning",
+    "#description": "Extra whitespace found"
+  },
+  {
+    "#valid_tag": "#adm{ADM}+code",
+    "#valid_severity": "error",
+    "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/{ISO}-adm{ADM}.csv",
+    "#valid_value+target_tag": "#adm{ADM}+code",
+    "#description": "Invalid p-code found"
+  },
+  {
+    "#valid_tag": "#adm{ADM}+name",
+    "#valid_severity": "error",
+    "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/{ISO}-adm{ADM}.csv",
+    "#valid_value+target_tag": "#adm{ADM}+name+ref",
+    "#description": "Invalid admin unit name found"
+  },
+  {
+    "#valid_tag": "#adm{ADM}+code",
+    "#valid_severity": "error",
+    "#valid_correlation": "adm{ADM}+name",
+    "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/{ISO}-adm{ADM}.csv",
+    "#description": "Invalid combination of p-code and administrative unit name found"
+  },
+  {
+    "#valid_tag": "#adm{ADM}+code",
+    "#valid_severity": "error",
+    "#valid_correlation": "adm{ADM}+name",
+    "#description": "P-code and admin unit name combinations not consistent"
+  }
+]
