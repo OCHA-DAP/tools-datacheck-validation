@@ -31,7 +31,7 @@ with Download() as downloader:
         ind = elementstr.find('pcode')
         iso3 = elementstr[ind-4:ind-1]
         countryisos.add(iso3)
-    with open('validation-schema-pcodes.json', 'rt') as f:
+    with open(join('..', 'validation-schema-pcodes.json'), 'rt') as f:
         template = json.loads(f.read(), object_pairs_hook=OrderedDict)
         for iso3 in sorted(countryisos):
             print(iso3)
