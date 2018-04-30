@@ -1,2 +1,1 @@
-html5lib
-hdx-python-utilities
+hdx-python-utilities==1.2.9
