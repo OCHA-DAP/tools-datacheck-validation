@@ -1,4 +1,3 @@
-import json
 import re
 from collections import OrderedDict
 from os.path import join
@@ -58,5 +57,5 @@ with Download() as downloader:
         for adminlevel in adminlevels:
             for admrule in admrules:
                 schema.append(get_rule(admrule, iso3, adminlevel))
-        save_json(schema, join('pcodes', 'validation-schema-pcodes-%s.json' % iso3.lower()), pretty=True)
+        save_json(schema, join('..', 'pcodes', 'validation-schema-pcodes-%s.json' % iso3.lower()), pretty=True)
 
