@@ -34,7 +34,7 @@ with Download() as downloader:
         iso3 = elementstr[ind-4:ind-1]
         countryisos.add(iso3)
 
-    template = load_json('validation-schema-pcodes.json')
+    template = load_json(join('..', 'validation-schema-pcodes.json'))
     for iso3 in sorted(countryisos):
         print(iso3)
         url = base_url % iso3
