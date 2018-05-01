@@ -36,7 +36,7 @@
     "#valid_tag": "#adm1+code",
     "#valid_severity": "error",
     "#valid_correlation": "adm1+name",
-    "#description": "P-code and admin unit name combination not consistent"
+    "#description": "P-code and admin unit name combinations not consistent"
   },
   {
     "#valid_tag": "#adm2+code",
@@ -63,6 +63,6 @@
     "#valid_tag": "#adm2+code",
     "#valid_severity": "error",
     "#valid_correlation": "adm2+name",
-    "#description": "P-code and admin unit name combination not consistent"
+    "#description": "P-code and admin unit name combinations not consistent"
   }
 ]
