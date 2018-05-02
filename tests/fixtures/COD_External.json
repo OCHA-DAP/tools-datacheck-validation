@@ -1,0 +1,18 @@
+{
+ "currentVersion": 10.51,
+ "folders": [],
+ "services": [
+  {
+   "name": "COD_External/SYR_EN",
+   "type": "MapServer"
+  },
+  {
+   "name": "COD_External/SYR_pcode",
+   "type": "FeatureServer"
+  },
+  {
+   "name": "COD_External/SYR_pcode",
+   "type": "MapServer"
+  }
+ ]
+}

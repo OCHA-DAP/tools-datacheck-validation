@@ -1,0 +1,2020 @@
+{
+ "layers": [
+  {
+   "currentVersion": 10.51,
+   "id": 0,
+   "name": "Populated Places",
+   "type": "Feature Layer",
+   "description": "Populated Places of Syria \n\nUsers should be aware: \n\n-\tPlaces represent the centroids of the admin4 (build up areas) layer and their attribution is identical\n-\tPopulated places do not use same p-code structure as the Admin layers\n-\t29 places fall outside of the Admin0 boundaries. Most fall right outside the border but \"Mazraet Deir Elashayer\" is the furthest, about 3,484 meters away from the closest boundary.\n-\t253 places do not have a 1 to 1 relationship between the English and Arabic names\n-\tPopulated Places only has parent attribution for their admin0-3 units, not for admin 5 (neighborhoods) \n-\tPlaces \"Rasm Elbardaqana\" and \"Hosh Hammad\" fall outside the borders of their attributed Admin1. \n-\t6 places fall outside their attributed Admin2. \n-\t12 places fall outside their attributed Admin3.\n-\tThe presence of parentheses and slashes in some names may indicate the need for secondary names to be separated and put in an alternate name field.\n-\tThe admin 3 unit of Masaada (SY140003) has no registered localities \n-\tAdmin capital attribution is included for Admin0, 1 and 3 capitals. No Admin2 capital attribution is included.\n",
+   "geometryType": "esriGeometryPoint",
+   "sourceSpatialReference": {
+    "wkid": 4326,
+    "latestWkid": 4326
+   },
+   "copyrightText": "",
+   "parentLayer": null,
+   "subLayers": [],
+   "minScale": 0,
+   "maxScale": 0,
+   "drawingInfo": {
+    "renderer": {
+     "type": "simple",
+     "symbol": {
+      "type": "esriPMS",
+      "url": "b789840069cb13e6034e9b55ef74dcf3",
+      "imageData": "iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAAXNSR0IB2cksfwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAEBJREFUCJklwTENhAAQBMAJuYryhHxFhQNKBCEBJ48VOoKLlUAomCmMWLv7TnIW/liSPN09FyafIcmvsGHHheMFOkkP+Etn1MQAAAAASUVORK5CYII=",
+      "contentType": "image/png",
+      "width": 3,
+      "height": 3,
+      "angle": 0,
+      "xoffset": 0,
+      "yoffset": 0
+     },
+     "label": "",
+     "description": ""
+    },
+    "transparency": 0,
+    "labelingInfo": null
+   },
+   "defaultVisibility": true,
+   "extent": {
+    "xmin": 35.78474399500004,
+    "ymin": 32.32887104200006,
+    "xmax": 42.33640443500008,
+    "ymax": 37.27985636300008,
+    "spatialReference": {
+     "wkid": 4326,
+     "latestWkid": 4326
+    }
+   },
+   "hasAttachments": false,
+   "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+   "displayField": "featureName_en",
+   "typeIdField": null,
+   "subtypeFieldName": null,
+   "fields": [
+    {
+     "name": "OBJECTID",
+     "type": "esriFieldTypeOID",
+     "alias": "OBJECTID",
+     "domain": null
+    },
+    {
+     "name": "popPlaceClassNumber",
+     "type": "esriFieldTypeInteger",
+     "alias": "popPlaceClassNumber",
+     "domain": null
+    },
+    {
+     "name": "popPlaceClassTitle",
+     "type": "esriFieldTypeString",
+     "alias": "popPlaceClassTitle",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin0Name_en",
+     "type": "esriFieldTypeString",
+     "alias": "admin0Name_en",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin0Name_ar",
+     "type": "esriFieldTypeString",
+     "alias": "admin0Name_ar",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin0Pcode",
+     "type": "esriFieldTypeString",
+     "alias": "admin0Pcode",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin1Name_en",
+     "type": "esriFieldTypeString",
+     "alias": "admin1Name_en",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin1Name_ar",
+     "type": "esriFieldTypeString",
+     "alias": "admin1Name_ar",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin1Pcode",
+     "type": "esriFieldTypeString",
+     "alias": "admin1Pcode",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin2Name_en",
+     "type": "esriFieldTypeString",
+     "alias": "admin2Name_en",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin2Name_ar",
+     "type": "esriFieldTypeString",
+     "alias": "admin2Name_ar",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin2Pcode",
+     "type": "esriFieldTypeString",
+     "alias": "admin2Pcode",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin3Name_en",
+     "type": "esriFieldTypeString",
+     "alias": "admin3Name_en",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin3Name_ar",
+     "type": "esriFieldTypeString",
+     "alias": "admin3Name_ar",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin3Pcode",
+     "type": "esriFieldTypeString",
+     "alias": "admin3Pcode",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "date",
+     "type": "esriFieldTypeDate",
+     "alias": "date",
+     "length": 8,
+     "domain": null
+    },
+    {
+     "name": "validOn",
+     "type": "esriFieldTypeDate",
+     "alias": "validOn",
+     "length": 8,
+     "domain": null
+    },
+    {
+     "name": "Shape",
+     "type": "esriFieldTypeGeometry",
+     "alias": "SHAPE",
+     "domain": null
+    },
+    {
+     "name": "validTo",
+     "type": "esriFieldTypeDate",
+     "alias": "validTo",
+     "length": 8,
+     "domain": null
+    },
+    {
+     "name": "featureName_en",
+     "type": "esriFieldTypeString",
+     "alias": "featureName_en",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "featureName_ar",
+     "type": "esriFieldTypeString",
+     "alias": "featureName_ar",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "pcode",
+     "type": "esriFieldTypeString",
+     "alias": "pcode",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "featureRefName",
+     "type": "esriFieldTypeString",
+     "alias": "featureRefName",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "featureAltName1_en",
+     "type": "esriFieldTypeString",
+     "alias": "featureAltName1_en",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "featureAltName2_en",
+     "type": "esriFieldTypeString",
+     "alias": "featureAltName2_en",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "featureAltName1_ar",
+     "type": "esriFieldTypeString",
+     "alias": "featureAltName1_ar",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "featureAltName2_ar",
+     "type": "esriFieldTypeString",
+     "alias": "featureAltName2_ar",
+     "length": 50,
+     "domain": null
+    }
+   ],
+   "indexes": [
+    {
+     "name": "R373_pk",
+     "fields": "OBJECTID",
+     "isAscending": true,
+     "isUnique": true,
+     "description": ""
+    },
+    {
+     "name": "S322_idx",
+     "fields": "Shape",
+     "isAscending": true,
+     "isUnique": true,
+     "description": ""
+    }
+   ],
+   "subtypes": [],
+   "relationships": [],
+   "canModifyLayer": true,
+   "canScaleSymbols": false,
+   "hasLabels": true,
+   "capabilities": "Data,Map,Query",
+   "maxRecordCount": 30000,
+   "supportsStatistics": true,
+   "supportsAdvancedQueries": true,
+   "supportedQueryFormats": "JSON, AMF, geoJSON",
+   "ownershipBasedAccessControlForFeatures": {"allowOthersToQuery": true},
+   "useStandardizedQueries": true,
+   "advancedQueryCapabilities": {
+    "useStandardizedQueries": true,
+    "supportsStatistics": true,
+    "supportsOrderBy": true,
+    "supportsDistinct": true,
+    "supportsPagination": true,
+    "supportsTrueCurve": true,
+    "supportsReturningQueryExtent": true,
+    "supportsQueryWithDistance": true,
+    "supportsSqlExpression": true
+   },
+   "supportsDatumTransformation": true,
+   "dateFieldsTimeReference": null
+  },
+  {
+   "currentVersion": 10.51,
+   "id": 1,
+   "name": "Admin0",
+   "type": "Feature Layer",
+   "description": "National boundary of Syria",
+   "geometryType": "esriGeometryPolygon",
+   "sourceSpatialReference": {
+    "wkid": 4326,
+    "latestWkid": 4326
+   },
+   "copyrightText": "",
+   "parentLayer": null,
+   "subLayers": [],
+   "minScale": 0,
+   "maxScale": 0,
+   "drawingInfo": {
+    "renderer": {
+     "type": "simple",
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSDash",
+       "color": [
+        0,
+        0,
+        0,
+        255
+       ],
+       "width": 0.4
+      }
+     },
+     "label": "",
+     "description": ""
+    },
+    "transparency": 0,
+    "labelingInfo": null
+   },
+   "defaultVisibility": true,
+   "extent": {
+    "xmin": 35.61393928500007,
+    "ymin": 32.31644249000004,
+    "xmax": 42.385042191000025,
+    "ymax": 37.31913948000005,
+    "spatialReference": {
+     "wkid": 4326,
+     "latestWkid": 4326
+    }
+   },
+   "hasAttachments": false,
+   "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+   "displayField": "admin0Name_en",
+   "typeIdField": null,
+   "subtypeFieldName": null,
+   "fields": [
+    {
+     "name": "OBJECTID",
+     "type": "esriFieldTypeOID",
+     "alias": "OBJECTID",
+     "domain": null
+    },
+    {
+     "name": "date",
+     "type": "esriFieldTypeDate",
+     "alias": "date",
+     "length": 8,
+     "domain": null
+    },
+    {
+     "name": "validOn",
+     "type": "esriFieldTypeDate",
+     "alias": "validOn",
+     "length": 8,
+     "domain": null
+    },
+    {
+     "name": "Shape",
+     "type": "esriFieldTypeGeometry",
+     "alias": "SHAPE",
+     "domain": null
+    },
+    {
+     "name": "Shape.STArea()",
+     "type": "esriFieldTypeDouble",
+     "alias": "Shape.STArea()",
+     "domain": null
+    },
+    {
+     "name": "Shape.STLength()",
+     "type": "esriFieldTypeDouble",
+     "alias": "SHAPE.STLength()",
+     "domain": null
+    },
+    {
+     "name": "admin0Name_en",
+     "type": "esriFieldTypeString",
+     "alias": "KMLSnippet",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin0Name_ar",
+     "type": "esriFieldTypeString",
+     "alias": "admin0Name_ar",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin0Pcode",
+     "type": "esriFieldTypeString",
+     "alias": "admin0Pcode",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin0RefName",
+     "type": "esriFieldTypeString",
+     "alias": "admin0RefName",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin0AltName1_en",
+     "type": "esriFieldTypeString",
+     "alias": "admin0AltName1_en",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin0AltName2_en",
+     "type": "esriFieldTypeString",
+     "alias": "admin0AltName2_en",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin0AltName1_ar",
+     "type": "esriFieldTypeString",
+     "alias": "admin0AltName1_ar",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin0AltName2_ar",
+     "type": "esriFieldTypeString",
+     "alias": "admin0AltName2_ar",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "validTo",
+     "type": "esriFieldTypeDate",
+     "alias": "validTo",
+     "length": 8,
+     "domain": null
+    }
+   ],
+   "indexes": [
+    {
+     "name": "R366_pk",
+     "fields": "OBJECTID",
+     "isAscending": true,
+     "isUnique": true,
+     "description": ""
+    },
+    {
+     "name": "S315_idx",
+     "fields": "Shape",
+     "isAscending": true,
+     "isUnique": true,
+     "description": ""
+    }
+   ],
+   "subtypes": [],
+   "relationships": [],
+   "canModifyLayer": true,
+   "canScaleSymbols": false,
+   "hasLabels": true,
+   "capabilities": "Data,Map,Query",
+   "maxRecordCount": 30000,
+   "supportsStatistics": true,
+   "supportsAdvancedQueries": true,
+   "supportedQueryFormats": "JSON, AMF, geoJSON",
+   "ownershipBasedAccessControlForFeatures": {"allowOthersToQuery": true},
+   "useStandardizedQueries": true,
+   "advancedQueryCapabilities": {
+    "useStandardizedQueries": true,
+    "supportsStatistics": true,
+    "supportsOrderBy": true,
+    "supportsDistinct": true,
+    "supportsPagination": true,
+    "supportsTrueCurve": true,
+    "supportsReturningQueryExtent": true,
+    "supportsQueryWithDistance": true,
+    "supportsSqlExpression": true
+   },
+   "supportsDatumTransformation": true,
+   "dateFieldsTimeReference": null
+  },
+  {
+   "currentVersion": 10.51,
+   "id": 2,
+   "name": "Admin1",
+   "type": "Feature Layer",
+   "description": "Governorate/Mohafaza",
+   "geometryType": "esriGeometryPolygon",
+   "sourceSpatialReference": {
+    "wkid": 4326,
+    "latestWkid": 4326
+   },
+   "copyrightText": "",
+   "parentLayer": null,
+   "subLayers": [],
+   "minScale": 0,
+   "maxScale": 0,
+   "drawingInfo": {
+    "renderer": {
+     "type": "simple",
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSDash",
+       "color": [
+        130,
+        130,
+        130,
+        255
+       ],
+       "width": 0.4
+      }
+     },
+     "label": "",
+     "description": ""
+    },
+    "transparency": 0,
+    "labelingInfo": null
+   },
+   "defaultVisibility": true,
+   "extent": {
+    "xmin": 35.61393928500007,
+    "ymin": 32.31644249000004,
+    "xmax": 42.385042191000025,
+    "ymax": 37.31913948000005,
+    "spatialReference": {
+     "wkid": 4326,
+     "latestWkid": 4326
+    }
+   },
+   "hasAttachments": false,
+   "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+   "displayField": "admin1Name_en",
+   "typeIdField": null,
+   "subtypeFieldName": null,
+   "fields": [
+    {
+     "name": "OBJECTID",
+     "type": "esriFieldTypeOID",
+     "alias": "OBJECTID",
+     "domain": null
+    },
+    {
+     "name": "admin0Name_en",
+     "type": "esriFieldTypeString",
+     "alias": "admin0Name_en",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin0Name_ar",
+     "type": "esriFieldTypeString",
+     "alias": "admin0Name_ar",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin0Pcode",
+     "type": "esriFieldTypeString",
+     "alias": "admin0Pcode",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "date",
+     "type": "esriFieldTypeDate",
+     "alias": "date",
+     "length": 8,
+     "domain": null
+    },
+    {
+     "name": "validOn",
+     "type": "esriFieldTypeDate",
+     "alias": "validOn",
+     "length": 8,
+     "domain": null
+    },
+    {
+     "name": "Shape",
+     "type": "esriFieldTypeGeometry",
+     "alias": "SHAPE",
+     "domain": null
+    },
+    {
+     "name": "Shape.STArea()",
+     "type": "esriFieldTypeDouble",
+     "alias": "Shape.STArea()",
+     "domain": null
+    },
+    {
+     "name": "Shape.STLength()",
+     "type": "esriFieldTypeDouble",
+     "alias": "SHAPE.STLength()",
+     "domain": null
+    },
+    {
+     "name": "admin1Name_en",
+     "type": "esriFieldTypeString",
+     "alias": "KMLSnippet",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin1Name_ar",
+     "type": "esriFieldTypeString",
+     "alias": "admin1Name_ar",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin1Pcode",
+     "type": "esriFieldTypeString",
+     "alias": "admin1Pcode",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin1RefName",
+     "type": "esriFieldTypeString",
+     "alias": "admin1RefName",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin1AltName1_en",
+     "type": "esriFieldTypeString",
+     "alias": "admin1AltName1_en",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin1AltName2_en",
+     "type": "esriFieldTypeString",
+     "alias": "admin1AltName2_en",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin1AltName1_ar",
+     "type": "esriFieldTypeString",
+     "alias": "admin1AltName1_ar",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin1AltName2_ar",
+     "type": "esriFieldTypeString",
+     "alias": "admin1AltName2_ar",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "validTo",
+     "type": "esriFieldTypeDate",
+     "alias": "validTo",
+     "length": 8,
+     "domain": null
+    }
+   ],
+   "indexes": [
+    {
+     "name": "R367_pk",
+     "fields": "OBJECTID",
+     "isAscending": true,
+     "isUnique": true,
+     "description": ""
+    },
+    {
+     "name": "S316_idx",
+     "fields": "Shape",
+     "isAscending": true,
+     "isUnique": true,
+     "description": ""
+    }
+   ],
+   "subtypes": [],
+   "relationships": [],
+   "canModifyLayer": true,
+   "canScaleSymbols": false,
+   "hasLabels": true,
+   "capabilities": "Data,Map,Query",
+   "maxRecordCount": 30000,
+   "supportsStatistics": true,
+   "supportsAdvancedQueries": true,
+   "supportedQueryFormats": "JSON, AMF, geoJSON",
+   "ownershipBasedAccessControlForFeatures": {"allowOthersToQuery": true},
+   "useStandardizedQueries": true,
+   "advancedQueryCapabilities": {
+    "useStandardizedQueries": true,
+    "supportsStatistics": true,
+    "supportsOrderBy": true,
+    "supportsDistinct": true,
+    "supportsPagination": true,
+    "supportsTrueCurve": true,
+    "supportsReturningQueryExtent": true,
+    "supportsQueryWithDistance": true,
+    "supportsSqlExpression": true
+   },
+   "supportsDatumTransformation": true,
+   "dateFieldsTimeReference": null
+  },
+  {
+   "currentVersion": 10.51,
+   "id": 3,
+   "name": "Admin2",
+   "type": "Feature Layer",
+   "description": "District/Mantika",
+   "geometryType": "esriGeometryPolygon",
+   "sourceSpatialReference": {
+    "wkid": 4326,
+    "latestWkid": 4326
+   },
+   "copyrightText": "",
+   "parentLayer": null,
+   "subLayers": [],
+   "minScale": 0,
+   "maxScale": 0,
+   "drawingInfo": {
+    "renderer": {
+     "type": "simple",
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSDash",
+       "color": [
+        189,
+        189,
+        197,
+        255
+       ],
+       "width": 0.4
+      }
+     },
+     "label": "",
+     "description": ""
+    },
+    "transparency": 0,
+    "labelingInfo": null
+   },
+   "defaultVisibility": true,
+   "extent": {
+    "xmin": 35.61393928500007,
+    "ymin": 32.31644249000004,
+    "xmax": 42.385042191000025,
+    "ymax": 37.31913948000005,
+    "spatialReference": {
+     "wkid": 4326,
+     "latestWkid": 4326
+    }
+   },
+   "hasAttachments": false,
+   "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+   "displayField": "admin2Name_en",
+   "typeIdField": null,
+   "subtypeFieldName": null,
+   "fields": [
+    {
+     "name": "OBJECTID",
+     "type": "esriFieldTypeOID",
+     "alias": "OBJECTID",
+     "domain": null
+    },
+    {
+     "name": "admin0Name_en",
+     "type": "esriFieldTypeString",
+     "alias": "admin0Name_en",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin0Name_ar",
+     "type": "esriFieldTypeString",
+     "alias": "admin0Name_ar",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin0Pcode",
+     "type": "esriFieldTypeString",
+     "alias": "admin0Pcode",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin1Name_en",
+     "type": "esriFieldTypeString",
+     "alias": "admin1Name_en",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin1Name_ar",
+     "type": "esriFieldTypeString",
+     "alias": "admin1Name_ar",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin1Pcode",
+     "type": "esriFieldTypeString",
+     "alias": "admin1Pcode",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "date",
+     "type": "esriFieldTypeDate",
+     "alias": "date",
+     "length": 8,
+     "domain": null
+    },
+    {
+     "name": "validOn",
+     "type": "esriFieldTypeDate",
+     "alias": "validOn",
+     "length": 8,
+     "domain": null
+    },
+    {
+     "name": "Shape",
+     "type": "esriFieldTypeGeometry",
+     "alias": "SHAPE",
+     "domain": null
+    },
+    {
+     "name": "Shape.STArea()",
+     "type": "esriFieldTypeDouble",
+     "alias": "Shape.STArea()",
+     "domain": null
+    },
+    {
+     "name": "Shape.STLength()",
+     "type": "esriFieldTypeDouble",
+     "alias": "SHAPE.STLength()",
+     "domain": null
+    },
+    {
+     "name": "admin2Name_en",
+     "type": "esriFieldTypeString",
+     "alias": "KMLSnippet",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin2Name_ar",
+     "type": "esriFieldTypeString",
+     "alias": "admin2Name_ar",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin2Pcode",
+     "type": "esriFieldTypeString",
+     "alias": "admin2Pcode",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin2RefName",
+     "type": "esriFieldTypeString",
+     "alias": "admin2RefName",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin2AltName1_en",
+     "type": "esriFieldTypeString",
+     "alias": "admin2AltName1_en",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin2AltName2_en",
+     "type": "esriFieldTypeString",
+     "alias": "admin2AltName2_en",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin2AltName1_ar",
+     "type": "esriFieldTypeString",
+     "alias": "admin2AltName1_ar",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin2AltName2_ar",
+     "type": "esriFieldTypeString",
+     "alias": "admin2AltName2_ar",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "ValidTo",
+     "type": "esriFieldTypeDate",
+     "alias": "validTo",
+     "length": 8,
+     "domain": null
+    }
+   ],
+   "indexes": [
+    {
+     "name": "R368_pk",
+     "fields": "OBJECTID",
+     "isAscending": true,
+     "isUnique": true,
+     "description": ""
+    },
+    {
+     "name": "S317_idx",
+     "fields": "Shape",
+     "isAscending": true,
+     "isUnique": true,
+     "description": ""
+    }
+   ],
+   "subtypes": [],
+   "relationships": [],
+   "canModifyLayer": true,
+   "canScaleSymbols": false,
+   "hasLabels": true,
+   "capabilities": "Data,Map,Query",
+   "maxRecordCount": 30000,
+   "supportsStatistics": true,
+   "supportsAdvancedQueries": true,
+   "supportedQueryFormats": "JSON, AMF, geoJSON",
+   "ownershipBasedAccessControlForFeatures": {"allowOthersToQuery": true},
+   "useStandardizedQueries": true,
+   "advancedQueryCapabilities": {
+    "useStandardizedQueries": true,
+    "supportsStatistics": true,
+    "supportsOrderBy": true,
+    "supportsDistinct": true,
+    "supportsPagination": true,
+    "supportsTrueCurve": true,
+    "supportsReturningQueryExtent": true,
+    "supportsQueryWithDistance": true,
+    "supportsSqlExpression": true
+   },
+   "supportsDatumTransformation": true,
+   "dateFieldsTimeReference": null
+  },
+  {
+   "currentVersion": 10.51,
+   "id": 4,
+   "name": "Admin3",
+   "type": "Feature Layer",
+   "description": "Sub-district/Nahya",
+   "geometryType": "esriGeometryPolygon",
+   "sourceSpatialReference": {
+    "wkid": 4326,
+    "latestWkid": 4326
+   },
+   "copyrightText": "",
+   "parentLayer": null,
+   "subLayers": [],
+   "minScale": 0,
+   "maxScale": 0,
+   "drawingInfo": {
+    "renderer": {
+     "type": "simple",
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSDash",
+       "color": [
+        178,
+        178,
+        178,
+        255
+       ],
+       "width": 0.4
+      }
+     },
+     "label": "",
+     "description": ""
+    },
+    "transparency": 0,
+    "labelingInfo": null
+   },
+   "defaultVisibility": true,
+   "extent": {
+    "xmin": 35.61393928500007,
+    "ymin": 32.31644249000004,
+    "xmax": 42.385042191000025,
+    "ymax": 37.31913948000005,
+    "spatialReference": {
+     "wkid": 4326,
+     "latestWkid": 4326
+    }
+   },
+   "hasAttachments": false,
+   "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+   "displayField": "admin3Name_en",
+   "typeIdField": null,
+   "subtypeFieldName": null,
+   "fields": [
+    {
+     "name": "OBJECTID",
+     "type": "esriFieldTypeOID",
+     "alias": "OBJECTID",
+     "domain": null
+    },
+    {
+     "name": "admin0Name_en",
+     "type": "esriFieldTypeString",
+     "alias": "admin0Name_en",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin0Name_ar",
+     "type": "esriFieldTypeString",
+     "alias": "admin0Name_ar",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin0Pcode",
+     "type": "esriFieldTypeString",
+     "alias": "admin0Pcode",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin1Name_en",
+     "type": "esriFieldTypeString",
+     "alias": "admin1Name_en",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin1Name_ar",
+     "type": "esriFieldTypeString",
+     "alias": "admin1Name_ar",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin1Pcode",
+     "type": "esriFieldTypeString",
+     "alias": "admin1Pcode",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin2Name_en",
+     "type": "esriFieldTypeString",
+     "alias": "admin2Name_en",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin2Name_ar",
+     "type": "esriFieldTypeString",
+     "alias": "admin2Name_ar",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin2Pcode",
+     "type": "esriFieldTypeString",
+     "alias": "admin2Pcode",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "date",
+     "type": "esriFieldTypeDate",
+     "alias": "date",
+     "length": 8,
+     "domain": null
+    },
+    {
+     "name": "validOn",
+     "type": "esriFieldTypeDate",
+     "alias": "validOn",
+     "length": 8,
+     "domain": null
+    },
+    {
+     "name": "Shape",
+     "type": "esriFieldTypeGeometry",
+     "alias": "SHAPE",
+     "domain": null
+    },
+    {
+     "name": "Shape.STArea()",
+     "type": "esriFieldTypeDouble",
+     "alias": "Shape.STArea()",
+     "domain": null
+    },
+    {
+     "name": "Shape.STLength()",
+     "type": "esriFieldTypeDouble",
+     "alias": "SHAPE.STLength()",
+     "domain": null
+    },
+    {
+     "name": "admin3Name_en",
+     "type": "esriFieldTypeString",
+     "alias": "KMLSnippet",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin3Name_ar",
+     "type": "esriFieldTypeString",
+     "alias": "admin3Name_ar",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin3Pcode",
+     "type": "esriFieldTypeString",
+     "alias": "admin3Pcode",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin3RefName",
+     "type": "esriFieldTypeString",
+     "alias": "admin3RefName",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin3AltName1_en",
+     "type": "esriFieldTypeString",
+     "alias": "admin3AltName1_en",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin3AltName2_en",
+     "type": "esriFieldTypeString",
+     "alias": "admin3AltName2_en",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin3AltName1_ar",
+     "type": "esriFieldTypeString",
+     "alias": "admin3AltName1_ar",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin3AltName2_ar",
+     "type": "esriFieldTypeString",
+     "alias": "admin3AltName2_ar",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "validTo",
+     "type": "esriFieldTypeDate",
+     "alias": "validTo",
+     "length": 8,
+     "domain": null
+    }
+   ],
+   "indexes": [
+    {
+     "name": "R369_pk",
+     "fields": "OBJECTID",
+     "isAscending": true,
+     "isUnique": true,
+     "description": ""
+    },
+    {
+     "name": "S318_idx",
+     "fields": "Shape",
+     "isAscending": true,
+     "isUnique": true,
+     "description": ""
+    }
+   ],
+   "subtypes": [],
+   "relationships": [],
+   "canModifyLayer": true,
+   "canScaleSymbols": false,
+   "hasLabels": true,
+   "capabilities": "Data,Map,Query",
+   "maxRecordCount": 30000,
+   "supportsStatistics": true,
+   "supportsAdvancedQueries": true,
+   "supportedQueryFormats": "JSON, AMF, geoJSON",
+   "ownershipBasedAccessControlForFeatures": {"allowOthersToQuery": true},
+   "useStandardizedQueries": true,
+   "advancedQueryCapabilities": {
+    "useStandardizedQueries": true,
+    "supportsStatistics": true,
+    "supportsOrderBy": true,
+    "supportsDistinct": true,
+    "supportsPagination": true,
+    "supportsTrueCurve": true,
+    "supportsReturningQueryExtent": true,
+    "supportsQueryWithDistance": true,
+    "supportsSqlExpression": true
+   },
+   "supportsDatumTransformation": true,
+   "dateFieldsTimeReference": null
+  },
+  {
+   "currentVersion": 10.51,
+   "id": 5,
+   "name": "Admin4",
+   "type": "Feature Layer",
+   "description": "Admin 4 - Places/Built Up Areas \n\nUsers should be aware: \n-\t253 Admin4 names do not have a 1 to 1 relationship between the English and Arabic names 5 \n-\tThe multipart feature of \"Kharab Eljir\" in Admin4 may be an error. It has been left as is\n-\tAdmin4 and 5 layers have p-code values which use a different format than the 0-3 p-code values\n-\tAdmin4 and 5 units do not nest with Admin0-3. Some units fall outside of the Admin0 borders. \n-\tAdmin5 has 133 nesting errors with Admin4.\n-\t253 Admin4 names do not have a 1 to 1 relationship between the English and Arabic names.\n-\tAdmin4 \"Rasm Elbardaqana\" has Admin1 \"Hama\" attribution but is spatially in Admin1 \"Homs\". \n-\tAdmin4 \"Hosh Hammad\" has Admin1 \"As-Sweida\" attribution but is spatially in Admin1 \"Dar'a\". \n-\t6 Admin4 units fall outside their attributed Admin2 parent. \n-\t12 Admin4 units fall outside their attributed Admin3 parent.\n-\tThe presence of parentheses and slashes in some names in the admin4 and admin5 layers may indicate the need for secondary names to be separated and put in an alternate name field.  \n",
+   "geometryType": "esriGeometryPolygon",
+   "sourceSpatialReference": {
+    "wkid": 4326,
+    "latestWkid": 4326
+   },
+   "copyrightText": "",
+   "parentLayer": null,
+   "subLayers": [],
+   "minScale": 0,
+   "maxScale": 0,
+   "drawingInfo": {
+    "renderer": {
+     "type": "simple",
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSDash",
+       "color": [
+        189,
+        189,
+        197,
+        255
+       ],
+       "width": 0.4
+      }
+     },
+     "label": "",
+     "description": ""
+    },
+    "transparency": 0,
+    "labelingInfo": null
+   },
+   "defaultVisibility": true,
+   "extent": {
+    "xmin": 35.71680524800007,
+    "ymin": 32.320386244000076,
+    "xmax": 42.34008789100005,
+    "ymax": 37.287590489000024,
+    "spatialReference": {
+     "wkid": 4326,
+     "latestWkid": 4326
+    }
+   },
+   "hasAttachments": false,
+   "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+   "displayField": "admin4Name_en",
+   "typeIdField": null,
+   "subtypeFieldName": null,
+   "fields": [
+    {
+     "name": "OBJECTID",
+     "type": "esriFieldTypeOID",
+     "alias": "OBJECTID",
+     "domain": null
+    },
+    {
+     "name": "admin4Name_en",
+     "type": "esriFieldTypeString",
+     "alias": "admin4Name_en",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin4Name_ar",
+     "type": "esriFieldTypeString",
+     "alias": "admin4Name_ar",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin4Pcode",
+     "type": "esriFieldTypeString",
+     "alias": "admin4Pcode",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin4RefName",
+     "type": "esriFieldTypeString",
+     "alias": "admin4RefName",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin4AltName1_en",
+     "type": "esriFieldTypeString",
+     "alias": "admin4AltName1_en",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin4AltName2_en",
+     "type": "esriFieldTypeString",
+     "alias": "admin4AltName2_en",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin4AltName1_ar",
+     "type": "esriFieldTypeString",
+     "alias": "admin4AltName1_ar",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin4AltName2_ar",
+     "type": "esriFieldTypeString",
+     "alias": "admin4AltName2_ar",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin3Name_en",
+     "type": "esriFieldTypeString",
+     "alias": "admin3Name_en",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin3Name_ar",
+     "type": "esriFieldTypeString",
+     "alias": "admin3Name_ar",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin3Pcode",
+     "type": "esriFieldTypeString",
+     "alias": "admin3Pcode",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin2Name_en",
+     "type": "esriFieldTypeString",
+     "alias": "admin2Name_en",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin2Name_ar",
+     "type": "esriFieldTypeString",
+     "alias": "admin2Name_ar",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin2Pcode",
+     "type": "esriFieldTypeString",
+     "alias": "admin2Pcode",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin1Name_en",
+     "type": "esriFieldTypeString",
+     "alias": "admin1Name_en",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin1Name_ar",
+     "type": "esriFieldTypeString",
+     "alias": "admin1Name_ar",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin1Pcode",
+     "type": "esriFieldTypeString",
+     "alias": "admin1Pcode",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin0Name_en",
+     "type": "esriFieldTypeString",
+     "alias": "admin0Name_en",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin0Name_ar",
+     "type": "esriFieldTypeString",
+     "alias": "admin0Name_ar",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin0Pcode",
+     "type": "esriFieldTypeString",
+     "alias": "admin0Pcode",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "date",
+     "type": "esriFieldTypeDate",
+     "alias": "date",
+     "length": 8,
+     "domain": null
+    },
+    {
+     "name": "validOn",
+     "type": "esriFieldTypeDate",
+     "alias": "validOn",
+     "length": 8,
+     "domain": null
+    },
+    {
+     "name": "validTo",
+     "type": "esriFieldTypeDate",
+     "alias": "validTo",
+     "length": 8,
+     "domain": null
+    },
+    {
+     "name": "Shape",
+     "type": "esriFieldTypeGeometry",
+     "alias": "Shape",
+     "domain": null
+    },
+    {
+     "name": "Shape.STArea()",
+     "type": "esriFieldTypeDouble",
+     "alias": "Shape.STArea()",
+     "domain": null
+    },
+    {
+     "name": "Shape.STLength()",
+     "type": "esriFieldTypeDouble",
+     "alias": "Shape.STLength()",
+     "domain": null
+    },
+    {
+     "name": "popPlaceClassTitle",
+     "type": "esriFieldTypeString",
+     "alias": "popPlaceClassTitle",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "popPlaceClassNumber",
+     "type": "esriFieldTypeSmallInteger",
+     "alias": "popPlaceClassNumber",
+     "domain": null
+    }
+   ],
+   "indexes": [
+    {
+     "name": "R371_pk",
+     "fields": "OBJECTID",
+     "isAscending": true,
+     "isUnique": true,
+     "description": ""
+    },
+    {
+     "name": "S320_idx",
+     "fields": "Shape",
+     "isAscending": true,
+     "isUnique": true,
+     "description": ""
+    }
+   ],
+   "subtypes": [],
+   "relationships": [],
+   "canModifyLayer": true,
+   "canScaleSymbols": false,
+   "hasLabels": true,
+   "capabilities": "Data,Map,Query",
+   "maxRecordCount": 30000,
+   "supportsStatistics": true,
+   "supportsAdvancedQueries": true,
+   "supportedQueryFormats": "JSON, AMF, geoJSON",
+   "ownershipBasedAccessControlForFeatures": {"allowOthersToQuery": true},
+   "useStandardizedQueries": true,
+   "advancedQueryCapabilities": {
+    "useStandardizedQueries": true,
+    "supportsStatistics": true,
+    "supportsOrderBy": true,
+    "supportsDistinct": true,
+    "supportsPagination": true,
+    "supportsTrueCurve": true,
+    "supportsReturningQueryExtent": true,
+    "supportsQueryWithDistance": true,
+    "supportsSqlExpression": true
+   },
+   "supportsDatumTransformation": true,
+   "dateFieldsTimeReference": null
+  },
+  {
+   "currentVersion": 10.51,
+   "id": 6,
+   "name": "Admin5",
+   "type": "Feature Layer",
+   "description": "Admin 5 - Neighbourhoods \n\nUsers should be aware:\n-\t5 Admin5 names do not have a 1 to 1 relationship between the English and Arabic names\n-\tAdmin4 and 5 layers have p-code values which use a different format than the 0-3 p-code values\n-\tAdmin4 and 5 units do not nest with Admin0-3. Some units fall outside of the Admin0 borders\n-\tAdmin5 has 133 nesting errors with Admin4.\n-\tThe presence of parentheses and slashes in some names in the admin4 and admin5 layers may indicate the need for secondary names to be separated and put in an alternate name field.\n",
+   "geometryType": "esriGeometryPolygon",
+   "sourceSpatialReference": {
+    "wkid": 4326,
+    "latestWkid": 4326
+   },
+   "copyrightText": "",
+   "parentLayer": null,
+   "subLayers": [],
+   "minScale": 0,
+   "maxScale": 0,
+   "drawingInfo": {
+    "renderer": {
+     "type": "simple",
+     "symbol": {
+      "type": "esriSFS",
+      "style": "esriSFSSolid",
+      "color": [
+       0,
+       0,
+       0,
+       0
+      ],
+      "outline": {
+       "type": "esriSLS",
+       "style": "esriSLSDash",
+       "color": [
+        189,
+        189,
+        197,
+        255
+       ],
+       "width": 0.4
+      }
+     },
+     "label": "",
+     "description": ""
+    },
+    "transparency": 0,
+    "labelingInfo": null
+   },
+   "defaultVisibility": true,
+   "extent": {
+    "xmin": 35.71680524800007,
+    "ymin": 32.59328293600004,
+    "xmax": 40.79438787200007,
+    "ymax": 36.54251479200008,
+    "spatialReference": {
+     "wkid": 4326,
+     "latestWkid": 4326
+    }
+   },
+   "hasAttachments": false,
+   "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+   "displayField": "admin4Name_en",
+   "typeIdField": null,
+   "subtypeFieldName": null,
+   "fields": [
+    {
+     "name": "OBJECTID",
+     "type": "esriFieldTypeOID",
+     "alias": "OBJECTID",
+     "domain": null
+    },
+    {
+     "name": "admin4Name_en",
+     "type": "esriFieldTypeString",
+     "alias": "admin4Name_en",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin4Name_ar",
+     "type": "esriFieldTypeString",
+     "alias": "admin4Name_ar",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin4Pcode",
+     "type": "esriFieldTypeString",
+     "alias": "admin4Pcode",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin3Name_en",
+     "type": "esriFieldTypeString",
+     "alias": "admin3Name_en",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin3Name_ar",
+     "type": "esriFieldTypeString",
+     "alias": "admin3Name_ar",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin3Pcode",
+     "type": "esriFieldTypeString",
+     "alias": "admin3Pcode",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin2Name_en",
+     "type": "esriFieldTypeString",
+     "alias": "admin2Name_en",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin2Name_ar",
+     "type": "esriFieldTypeString",
+     "alias": "admin2Name_ar",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin2Pcode",
+     "type": "esriFieldTypeString",
+     "alias": "admin2Pcode",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin1Name_en",
+     "type": "esriFieldTypeString",
+     "alias": "admin1Name_en",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin1Name_ar",
+     "type": "esriFieldTypeString",
+     "alias": "admin1Name_ar",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin1Pcode",
+     "type": "esriFieldTypeString",
+     "alias": "admin1Pcode",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin0Name_en",
+     "type": "esriFieldTypeString",
+     "alias": "admin0Name_en",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin0Name_ar",
+     "type": "esriFieldTypeString",
+     "alias": "admin0Name_ar",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin0Pcode",
+     "type": "esriFieldTypeString",
+     "alias": "admin0Pcode",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "date",
+     "type": "esriFieldTypeDate",
+     "alias": "date",
+     "length": 8,
+     "domain": null
+    },
+    {
+     "name": "validOn",
+     "type": "esriFieldTypeDate",
+     "alias": "validOn",
+     "length": 8,
+     "domain": null
+    },
+    {
+     "name": "validTo",
+     "type": "esriFieldTypeDate",
+     "alias": "validTo",
+     "length": 8,
+     "domain": null
+    },
+    {
+     "name": "Shape",
+     "type": "esriFieldTypeGeometry",
+     "alias": "Shape",
+     "domain": null
+    },
+    {
+     "name": "Shape.STArea()",
+     "type": "esriFieldTypeDouble",
+     "alias": "Shape.STArea()",
+     "domain": null
+    },
+    {
+     "name": "Shape.STLength()",
+     "type": "esriFieldTypeDouble",
+     "alias": "Shape.STLength()",
+     "domain": null
+    },
+    {
+     "name": "admin5Name_en",
+     "type": "esriFieldTypeString",
+     "alias": "admin5Name_en",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin5Name_ar",
+     "type": "esriFieldTypeString",
+     "alias": "admin5Name_ar",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin5Pcode",
+     "type": "esriFieldTypeString",
+     "alias": "admin5Pcode",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin5RefName",
+     "type": "esriFieldTypeString",
+     "alias": "admin5RefName",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin5AltName1_en",
+     "type": "esriFieldTypeString",
+     "alias": "admin5AltName1_en",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin5AltName2_en",
+     "type": "esriFieldTypeString",
+     "alias": "admin5AltName2_en",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin5AltName1_ar",
+     "type": "esriFieldTypeString",
+     "alias": "admin5AltName1_ar",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "admin5AltName2_ar",
+     "type": "esriFieldTypeString",
+     "alias": "admin5AltName2_ar",
+     "length": 50,
+     "domain": null
+    },
+    {
+     "name": "areaName_en",
+     "type": "esriFieldTypeString",
+     "alias": "areaName_en",
+     "length": 150,
+     "domain": null
+    },
+    {
+     "name": "areaName_ar",
+     "type": "esriFieldTypeString",
+     "alias": "areaName_ar",
+     "length": 150,
+     "domain": null
+    },
+    {
+     "name": "areaPcode",
+     "type": "esriFieldTypeString",
+     "alias": "areaPcode",
+     "length": 30,
+     "domain": null
+    }
+   ],
+   "indexes": [
+    {
+     "name": "R372_pk",
+     "fields": "OBJECTID",
+     "isAscending": true,
+     "isUnique": true,
+     "description": ""
+    },
+    {
+     "name": "S321_idx",
+     "fields": "Shape",
+     "isAscending": true,
+     "isUnique": true,
+     "description": ""
+    }
+   ],
+   "subtypes": [],
+   "relationships": [],
+   "canModifyLayer": true,
+   "canScaleSymbols": false,
+   "hasLabels": true,
+   "capabilities": "Data,Map,Query",
+   "maxRecordCount": 30000,
+   "supportsStatistics": true,
+   "supportsAdvancedQueries": true,
+   "hasZ": true,
+   "supportedQueryFormats": "JSON, AMF, geoJSON",
+   "ownershipBasedAccessControlForFeatures": {"allowOthersToQuery": true},
+   "useStandardizedQueries": true,
+   "advancedQueryCapabilities": {
+    "useStandardizedQueries": true,
+    "supportsStatistics": true,
+    "supportsOrderBy": true,
+    "supportsDistinct": true,
+    "supportsPagination": true,
+    "supportsTrueCurve": true,
+    "supportsReturningQueryExtent": true,
+    "supportsQueryWithDistance": true,
+    "supportsSqlExpression": true
+   },
+   "supportsDatumTransformation": true,
+   "dateFieldsTimeReference": null
+  },
+  {
+   "currentVersion": 10.51,
+   "id": 7,
+   "name": "AdminLines",
+   "type": "Feature Layer",
+   "description": "Because the Admin4 and 5 layers are not nested with Admin0-3, the Admin Lines layer only includes Admin0-3 data",
+   "geometryType": "esriGeometryPolyline",
+   "sourceSpatialReference": {
+    "wkid": 4326,
+    "latestWkid": 4326
+   },
+   "copyrightText": "",
+   "parentLayer": null,
+   "subLayers": [],
+   "minScale": 0,
+   "maxScale": 0,
+   "drawingInfo": {
+    "renderer": {
+     "type": "simple",
+     "symbol": {
+      "type": "esriSLS",
+      "style": "esriSLSSolid",
+      "color": [
+       133,
+       0,
+       11,
+       255
+      ],
+      "width": 1
+     },
+     "label": "",
+     "description": ""
+    },
+    "transparency": 0,
+    "labelingInfo": null
+   },
+   "defaultVisibility": false,
+   "extent": {
+    "xmin": 35.61393928500007,
+    "ymin": 32.31644249000004,
+    "xmax": 42.385042191000025,
+    "ymax": 37.31913948000005,
+    "spatialReference": {
+     "wkid": 4326,
+     "latestWkid": 4326
+    }
+   },
+   "hasAttachments": false,
+   "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+   "displayField": "adminLevel",
+   "typeIdField": null,
+   "subtypeFieldName": null,
+   "fields": [
+    {
+     "name": "OBJECTID",
+     "type": "esriFieldTypeOID",
+     "alias": "OBJECTID",
+     "domain": null
+    },
+    {
+     "name": "adminLevel",
+     "type": "esriFieldTypeSmallInteger",
+     "alias": "adminLevel",
+     "domain": null
+    },
+    {
+     "name": "date",
+     "type": "esriFieldTypeDate",
+     "alias": "date",
+     "length": 8,
+     "domain": null
+    },
+    {
+     "name": "validOn",
+     "type": "esriFieldTypeDate",
+     "alias": "validOn",
+     "length": 8,
+     "domain": null
+    },
+    {
+     "name": "validTo",
+     "type": "esriFieldTypeDate",
+     "alias": "validTo",
+     "length": 8,
+     "domain": null
+    },
+    {
+     "name": "Shape",
+     "type": "esriFieldTypeGeometry",
+     "alias": "SHAPE",
+     "domain": null
+    },
+    {
+     "name": "Shape.STLength()",
+     "type": "esriFieldTypeDouble",
+     "alias": "Shape.STLength()",
+     "domain": null
+    }
+   ],
+   "indexes": [
+    {
+     "name": "R375_pk",
+     "fields": "OBJECTID",
+     "isAscending": true,
+     "isUnique": true,
+     "description": ""
+    },
+    {
+     "name": "S323_idx",
+     "fields": "Shape",
+     "isAscending": true,
+     "isUnique": true,
+     "description": ""
+    }
+   ],
+   "subtypes": [],
+   "relationships": [],
+   "canModifyLayer": true,
+   "canScaleSymbols": false,
+   "hasLabels": false,
+   "capabilities": "Data,Map,Query",
+   "maxRecordCount": 30000,
+   "supportsStatistics": true,
+   "supportsAdvancedQueries": true,
+   "supportedQueryFormats": "JSON, AMF, geoJSON",
+   "ownershipBasedAccessControlForFeatures": {"allowOthersToQuery": true},
+   "useStandardizedQueries": true,
+   "advancedQueryCapabilities": {
+    "useStandardizedQueries": true,
+    "supportsStatistics": true,
+    "supportsOrderBy": true,
+    "supportsDistinct": true,
+    "supportsPagination": true,
+    "supportsTrueCurve": true,
+    "supportsReturningQueryExtent": true,
+    "supportsQueryWithDistance": true,
+    "supportsSqlExpression": true
+   },
+   "supportsDatumTransformation": true,
+   "dateFieldsTimeReference": null
+  }
+ ],
+ "tables": []
+}
