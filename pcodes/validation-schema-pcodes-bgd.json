@@ -14,14 +14,14 @@
   {
     "#valid_tag": "#adm1+code",
     "#valid_severity": "error",
-    "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/ukr-adm1.csv",
+    "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/bgd-adm1.csv",
     "#valid_value+target_tag": "#adm1+code",
     "#description": "Invalid p-code found"
   },
   {
     "#valid_tag": "#adm1+name",
     "#valid_severity": "error",
-    "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/ukr-adm1.csv",
+    "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/bgd-adm1.csv",
     "#valid_value+target_tag": "#adm1+name+ref",
     "#description": "Invalid admin unit name found"
   },
@@ -29,7 +29,7 @@
     "#valid_tag": "#adm1+code",
     "#valid_severity": "error",
     "#valid_correlation": "adm1+name",
-    "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/ukr-adm1.csv",
+    "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/bgd-adm1.csv",
     "#description": "Invalid combination of p-code and administrative unit name found"
   },
   {
@@ -41,14 +41,14 @@
   {
     "#valid_tag": "#adm2+code",
     "#valid_severity": "error",
-    "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/ukr-adm2.csv",
+    "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/bgd-adm2.csv",
     "#valid_value+target_tag": "#adm2+code",
     "#description": "Invalid p-code found"
   },
   {
     "#valid_tag": "#adm2+name",
     "#valid_severity": "error",
-    "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/ukr-adm2.csv",
+    "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/bgd-adm2.csv",
     "#valid_value+target_tag": "#adm2+name+ref",
     "#description": "Invalid admin unit name found"
   },
@@ -56,7 +56,7 @@
     "#valid_tag": "#adm2+code",
     "#valid_severity": "error",
     "#valid_correlation": "adm2+name",
-    "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/ukr-adm2.csv",
+    "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/bgd-adm2.csv",
     "#description": "Invalid combination of p-code and administrative unit name found"
   },
   {
@@ -68,14 +68,14 @@
   {
     "#valid_tag": "#adm3+code",
     "#valid_severity": "error",
-    "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/ukr-adm3.csv",
+    "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/bgd-adm3.csv",
     "#valid_value+target_tag": "#adm3+code",
     "#description": "Invalid p-code found"
   },
   {
     "#valid_tag": "#adm3+name",
     "#valid_severity": "error",
-    "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/ukr-adm3.csv",
+    "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/bgd-adm3.csv",
     "#valid_value+target_tag": "#adm3+name+ref",
     "#description": "Invalid admin unit name found"
   },
@@ -83,7 +83,7 @@
     "#valid_tag": "#adm3+code",
     "#valid_severity": "error",
     "#valid_correlation": "adm3+name",
-    "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/ukr-adm3.csv",
+    "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/bgd-adm3.csv",
     "#description": "Invalid combination of p-code and administrative unit name found"
   },
   {
@@ -95,14 +95,14 @@
   {
     "#valid_tag": "#adm4+code",
     "#valid_severity": "error",
-    "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/ukr-adm4.csv",
+    "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/bgd-adm4.csv",
     "#valid_value+target_tag": "#adm4+code",
     "#description": "Invalid p-code found"
   },
   {
     "#valid_tag": "#adm4+name",
     "#valid_severity": "error",
-    "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/ukr-adm4.csv",
+    "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/bgd-adm4.csv",
     "#valid_value+target_tag": "#adm4+name+ref",
     "#description": "Invalid admin unit name found"
   },
@@ -110,7 +110,7 @@
     "#valid_tag": "#adm4+code",
     "#valid_severity": "error",
     "#valid_correlation": "adm4+name",
-    "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/ukr-adm4.csv",
+    "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/bgd-adm4.csv",
     "#description": "Invalid combination of p-code and administrative unit name found"
   },
   {

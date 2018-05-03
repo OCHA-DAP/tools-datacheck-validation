@@ -1,13 +1,9 @@
-import json
-import re
 from collections import OrderedDict
 from os.path import join
 
-from bs4 import BeautifulSoup
 from hdx.utilities.downloader import Download
-
-start_url = 'http://gistmaps.itos.uga.edu/arcgis/rest/services/COD_External'
-base_url = 'http://gistmaps.itos.uga.edu/arcgis/rest/services/COD_External/%s_pcode/FeatureServer'
+from hdx.utilities.loader import load_json
+from hdx.utilities.saver import save_json
 
 
 def get_rule(rule_template, iso3, adm=None):
@@ -17,30 +13,33 @@ def get_rule(rule_template, iso3, adm=None):
         if isinstance(value, str):
             value = value.replace('{ISO}', iso3.lower())
             if adm:
-                value = value.replace('{ADM}', adm)
+                value = value.replace('{ADM}', str(adm))
         rule[key] = value
     return rule
 
 
-with Download() as downloader:
-    response = downloader.download(start_url)
-    soup = BeautifulSoup(response.text, 'html5lib')
-    countryisos = set()
-    for element in soup.findAll(text=re.compile('.*pcode.*')):
-        elementstr = str(element)
-        ind = elementstr.find('pcode')
-        iso3 = elementstr[ind-4:ind-1]
-        countryisos.add(iso3)
-    with open(join('..', 'validation-schema-pcodes.json'), 'rt') as f:
-        template = json.loads(f.read(), object_pairs_hook=OrderedDict)
+def schemacreator(start_url, base_url, template_path, output_folder):
+    with Download() as downloader:
+        response = downloader.download(start_url)
+        countryisos = set()
+        for service in response.json()['services']:
+            servicenameright = service['name'].split('/')[1]
+            iso3 = servicenameright[:3]
+            countryisos.add(iso3)
+
+        template = load_json(template_path)
         for iso3 in sorted(countryisos):
             print(iso3)
             url = base_url % iso3
             response = downloader.download(url)
-            soup = BeautifulSoup(response.text, 'html5lib')
-            adminlevels = list()
-            for element in soup.findAll(text=re.compile('Admin[1-5]')):
-                adminlevels.append(str(element)[-1])
+            adminlevels = set()
+            for layer in response.json()['layers']:
+                layername = layer['name'].lower()
+                if 'feature' in layer['type'].lower() and 'admin' in layername and not 'lines' in layername:
+                    adminlevel = int(layername[-1])
+                    if adminlevel > 0:
+                        adminlevels.add(adminlevel)
+            adminlevels = sorted(list(adminlevels))
             print(adminlevels)
             schema = list()
             admrules = list()
@@ -56,6 +55,12 @@ with Download() as downloader:
             for adminlevel in adminlevels:
                 for admrule in admrules:
                     schema.append(get_rule(admrule, iso3, adminlevel))
-            with open(join('..','pcodes', 'validation-schema-pcodes-%s.json' % iso3.lower()), 'w') as outfile:
-                json.dump(schema, outfile, indent=2)
+            save_json(schema, join(output_folder, 'validation-schema-pcodes-%s.json' % iso3.lower()), pretty=True)
 
+
+if __name__ == '__main__':
+    start_url = 'http://gistmaps.itos.uga.edu/arcgis/rest/services/COD_External?f=pjson'
+    base_url = 'http://gistmaps.itos.uga.edu/arcgis/rest/services/COD_External/%s_pcode/MapServer/layers?f=pjson'
+    template_path = join('..', 'validation-schema-pcodes.json')
+    output_folder = join('..', 'pcodes')
+    schemacreator(start_url, base_url, template_path, output_folder)
