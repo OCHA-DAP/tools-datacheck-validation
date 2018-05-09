@@ -18,6 +18,5 @@ deploy:
   target-branch: prod
   on:
     branch:
-      - master
       - dev
 
