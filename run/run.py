@@ -1,1 +1,0 @@
-print("Look! Another penguin")
