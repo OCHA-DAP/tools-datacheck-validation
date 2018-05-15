@@ -3,13 +3,17 @@
     "#meta+comment": "Always a date",
     "#valid_tag": "#date",
     "#valid_severity": "error",
-    "#valid_datatype": "date"
+    "#valid_datatype": "date",
+    "#rule_type": "Check for consistent date data type",
+    "#rule_type_description": "Check each cell has the same date data type as the majority of others a column."
   },
   {
     "#meta+comment": "Always a number",
     "#valid_tag": "#population,#affected,#inneed,#targeted,#reached,#indicator+num,#output+num,#value",
     "#valid_severity": "error",
-    "#valid_datatype": "number"
+    "#valid_datatype": "number",
+    "#rule_type": "Check for consistent number data type",
+    "#rule_type_description": "Check each cell has the same date data type as the majority of others a column."
   },
   {
     "#meta+comment": "Gently point out numeric outliers",
@@ -45,6 +49,8 @@
     "#valid_tag": "#*",
     "#valid_severity": "warning",
     "#valid_value+whitespace": "true",
-    "#description": "Extra whitespace can affect reporting and visualisation"
+    "#description": "Extra whitespace can affect reporting and visualisation",
+    "#rule_type": "Check for white space errors",
+    "#rule_type_description": "Check each cell for leading and trailing white spaces and for more than one white space between words."
   }
 ]
