@@ -1,13 +1,30 @@
-dist: trusty
 language: python
 python:
-- '3.6'
+  - '3.4'
+
+#
+# Command to install dependencies.
+#
 install:
-- ls -l pcodes/*json
-- pip install -r requirements.txt
+  - ls -l pcodes/*json
+  - pip install -r test-requirements.txt
+
+#
+# Run tests + coverage.
+#
+before_script: py.test --cov-config .coveragerc --cov-report= --cov=.
+
+#
+# Send coverage report to coveralls.io and run main script
+#
 script:
-- cd run
-- python3 schemacreator.py
+  - coveralls
+  - cd run
+  - python3 schemacreator.py
+
+#
+# Deploy dev branch to prod
+#
 deploy:
   provider: pages
   skip-cleanup: true
