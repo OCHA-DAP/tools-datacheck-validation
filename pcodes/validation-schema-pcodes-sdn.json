@@ -3,13 +3,17 @@
     "#meta+comment": "Always a date",
     "#valid_tag": "#date",
     "#valid_severity": "error",
-    "#valid_datatype": "date"
+    "#valid_datatype": "date",
+    "#rule_type": "Check for consistent date data type",
+    "#rule_type_description": "Check each cell has the same date data type as the majority of others a column."
   },
   {
     "#meta+comment": "Always a number",
     "#valid_tag": "#population,#affected,#inneed,#targeted,#reached,#indicator+num,#output+num,#value",
     "#valid_severity": "error",
-    "#valid_datatype": "number"
+    "#valid_datatype": "number",
+    "#rule_type": "Check for consistent number data type",
+    "#rule_type_description": "Check each cell has the same date data type as the majority of others a column."
   },
   {
     "#meta+comment": "Gently point out numeric outliers",
@@ -45,60 +49,78 @@
     "#valid_tag": "#*",
     "#valid_severity": "warning",
     "#valid_value+whitespace": "true",
-    "#description": "Extra whitespace can affect reporting and visualisation"
+    "#description": "Extra whitespace can affect reporting and visualisation",
+    "#rule_type": "Check for white space errors",
+    "#rule_type_description": "Check each cell for leading and trailing white spaces and for more than one white space between words."
   },
   {
     "#valid_tag": "#adm1+code",
     "#valid_severity": "error",
     "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/sdn-adm1.csv",
     "#valid_value+target_tag": "#adm1+code",
-    "#description": "Invalid p-code found"
+    "#description": "Invalid p-code found",
+    "#rule_type": "Check for valid p-codes",
+    "#rule_type_description": "For a column with HXL tag indicating it contains p-codes, check the value in each cell is a p-code that can be found in the ITOS service."
   },
   {
     "#valid_tag": "#adm1+name",
     "#valid_severity": "error",
     "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/sdn-adm1.csv",
     "#valid_value+target_tag": "#adm1+name+ref",
-    "#description": "Invalid admin unit name found"
+    "#description": "Invalid admin unit name found",
+    "#rule_type": "Check for valid admin unit names",
+    "#rule_type_description": "For a column with HXL tag indicating it contains admin unit names, check the value in each cell is an admin unit name that can be found in the ITOS service."
   },
   {
     "#valid_tag": "#adm1+code",
     "#valid_severity": "error",
     "#valid_correlation": "adm1+name",
     "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/sdn-adm1.csv",
-    "#description": "Invalid combination of p-code and administrative unit name found"
+    "#description": "Invalid combination of p-code and administrative unit name found",
+    "#rule_type": "Check for consistent and valid p-code and name combinations",
+    "#rule_type_description": "For a column with HXL tag indicating it contains admin unit names and another with HXL tag indicating it contains p-codes, check the values in corresponding cells are consistent by comparing with the ITOS service."
   },
   {
     "#valid_tag": "#adm1+code",
     "#valid_severity": "error",
     "#valid_correlation": "adm1+name",
-    "#description": "P-code and admin unit name combinations not consistent"
+    "#description": "P-code and admin unit name combinations not consistent",
+    "#rule_type": "Check for consistent p-code and name combinations",
+    "#rule_type_description": "For a column with HXL tag indicating it contains admin unit names and another with HXL tag indicating it contains p-codes, check the values in corresponding cells are consistent."
   },
   {
     "#valid_tag": "#adm2+code",
     "#valid_severity": "error",
     "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/sdn-adm2.csv",
     "#valid_value+target_tag": "#adm2+code",
-    "#description": "Invalid p-code found"
+    "#description": "Invalid p-code found",
+    "#rule_type": "Check for valid p-codes",
+    "#rule_type_description": "For a column with HXL tag indicating it contains p-codes, check the value in each cell is a p-code that can be found in the ITOS service."
   },
   {
     "#valid_tag": "#adm2+name",
     "#valid_severity": "error",
     "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/sdn-adm2.csv",
     "#valid_value+target_tag": "#adm2+name+ref",
-    "#description": "Invalid admin unit name found"
+    "#description": "Invalid admin unit name found",
+    "#rule_type": "Check for valid admin unit names",
+    "#rule_type_description": "For a column with HXL tag indicating it contains admin unit names, check the value in each cell is an admin unit name that can be found in the ITOS service."
   },
   {
     "#valid_tag": "#adm2+code",
     "#valid_severity": "error",
     "#valid_correlation": "adm2+name",
     "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/sdn-adm2.csv",
-    "#description": "Invalid combination of p-code and administrative unit name found"
+    "#description": "Invalid combination of p-code and administrative unit name found",
+    "#rule_type": "Check for consistent and valid p-code and name combinations",
+    "#rule_type_description": "For a column with HXL tag indicating it contains admin unit names and another with HXL tag indicating it contains p-codes, check the values in corresponding cells are consistent by comparing with the ITOS service."
   },
   {
     "#valid_tag": "#adm2+code",
     "#valid_severity": "error",
     "#valid_correlation": "adm2+name",
-    "#description": "P-code and admin unit name combinations not consistent"
+    "#description": "P-code and admin unit name combinations not consistent",
+    "#rule_type": "Check for consistent p-code and name combinations",
+    "#rule_type_description": "For a column with HXL tag indicating it contains admin unit names and another with HXL tag indicating it contains p-codes, check the values in corresponding cells are consistent."
   }
 ]
