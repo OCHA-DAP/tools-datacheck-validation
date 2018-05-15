@@ -4,30 +4,34 @@
     "#valid_tag": "#date",
     "#valid_severity": "error",
     "#valid_datatype": "date",
-    "#rule_type": "Check for consistent date data type",
-    "#rule_type_description": "Check each cell has the same date data type as the majority of others a column."
+    "#rule_type": "Check all values are dates",
+    "#rule_type_description": "Check each cell in the column contains a date."
   },
   {
     "#meta+comment": "Always a number",
     "#valid_tag": "#population,#affected,#inneed,#targeted,#reached,#indicator+num,#output+num,#value",
     "#valid_severity": "error",
     "#valid_datatype": "number",
-    "#rule_type": "Check for consistent number data type",
-    "#rule_type_description": "Check each cell has the same date data type as the majority of others a column."
+    "#rule_type": "Check all values are numbers",
+    "#rule_type_description": "Check each cell in the column contains a number."
   },
   {
     "#meta+comment": "Gently point out numeric outliers",
     "#valid_tag": "#population,#affected,#inneed,#targeted,#reached,#indicator+num,#output+num,#value",
     "#valid_severity": "info",
-    "#valid_value+outliers": "true"
+    "#valid_value+outliers": "true",
+    "#rule_type": "Check for numeric outliers",
+    "#rule_type_description": "Check each cell value to see if it is an outlier compared to others in the column."
   },
   {
-    "#meta+comment": "Spell-check highly-repetitive values",
+    "#meta+comment": "Spell-check highly repetitive values",
     "#valid_tag": "#org,#sector,#subsector,#status,#beneficiary,#indicator+name,#access,#frequency,#item,#operations,#service,#channel,#modality,#currency,#impact,#group,#severity",
     "#valid_severity": "warning",
     "#valid_value+case": "true",
     "#valid_value+spelling": "true",
-    "#description": "Rare value: check that it is correct"
+    "#description": "Rare value: check that it is correct",
+    "#rule_type": "Check spelling of highly repetitive values",
+    "#rule_type_description": "Check the spelling of multiple repeated cell values in the column."
   },
   {
     "#meta+comment": "Placenames may benefit from spell checking",
@@ -35,14 +39,18 @@
     "#valid_severity": "info",
     "#valid_value+case": "true",
     "#valid_value+spelling": "true",
-    "#description": "Rare value: check that it is correct"
+    "#description": "Rare value: check that it is correct",
+    "#rule_type": "Check spelling of placenames",
+    "#rule_type_description": "For a column with HXL tag indicating it contains placenames, check the spelling of each placename."
   },
   {
     "#meta+comment": "Look for consistent datatypes with indicators",
     "#valid_tag": "#indicator",
     "#valid_severity": "warning",
     "#valid_datatype+consistent": "true",
-    "#description": "Possibly inconsistent datatype for this indicator"
+    "#description": "Possibly inconsistent datatype for this indicator",
+    "#rule_type": "Check datatype consistency of indicators",
+    "#rule_type_description": "For a column with HXL tag indicating it contains indicators, check each cell has the same data type as the majority of others."
   },
   {
     "#meta+comment": "Detect sloppy whitespace anywhere",
@@ -52,5 +60,5 @@
     "#description": "Extra whitespace can affect reporting and visualisation",
     "#rule_type": "Check for white space errors",
     "#rule_type_description": "Check each cell for leading and trailing white spaces and for more than one white space between words."
-  }
+  },
 ]
