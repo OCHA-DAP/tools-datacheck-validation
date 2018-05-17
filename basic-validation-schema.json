@@ -60,5 +60,5 @@
     "#description": "Extra whitespace can affect reporting and visualisation",
     "#rule_type": "Check for white space errors",
     "#rule_type_description": "Check each cell for leading and trailing white spaces and for more than one white space between words."
-  },
+  }
 ]
