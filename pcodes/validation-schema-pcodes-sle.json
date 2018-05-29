@@ -4,7 +4,7 @@
     "#valid_tag": "#date",
     "#valid_severity": "error",
     "#valid_datatype": "date",
-    "#rule_type": "Check all values are dates",
+    "#rule_type": "test-dan",
     "#rule_type_description": "Check each cell in the column contains a date."
   },
   {
@@ -12,7 +12,7 @@
     "#valid_tag": "#population,#affected,#inneed,#targeted,#reached,#indicator+num,#output+num,#value",
     "#valid_severity": "error",
     "#valid_datatype": "number",
-    "#rule_type": "Check all values are numbers",
+    "#rule_type": "test-dan",
     "#rule_type_description": "Check each cell in the column contains a number."
   },
   {
@@ -20,7 +20,7 @@
     "#valid_tag": "#population,#affected,#inneed,#targeted,#reached,#indicator+num,#output+num,#value",
     "#valid_severity": "info",
     "#valid_value+outliers": "true",
-    "#rule_type": "Check for numeric outliers",
+    "#rule_type": "test-dan",
     "#rule_type_description": "Check each cell value to see if it is an outlier compared to others in the column."
   },
   {
@@ -30,7 +30,7 @@
     "#valid_value+case": "true",
     "#valid_value+spelling": "true",
     "#description": "Rare value: check that it is correct",
-    "#rule_type": "Check spelling of highly repetitive values",
+    "#rule_type": "test-dan",
     "#rule_type_description": "Check the spelling of multiple repeated cell values in the column."
   },
   {
@@ -40,7 +40,7 @@
     "#valid_value+case": "true",
     "#valid_value+spelling": "true",
     "#description": "Rare value: check that it is correct",
-    "#rule_type": "Check spelling of placenames",
+    "#rule_type": "test-dan",
     "#rule_type_description": "For a column with HXL tag indicating it contains placenames, check the spelling of each placename."
   },
   {
@@ -49,7 +49,7 @@
     "#valid_severity": "warning",
     "#valid_datatype+consistent": "true",
     "#description": "Possibly inconsistent datatype for this indicator",
-    "#rule_type": "Check datatype consistency of indicators",
+    "#rule_type": "test-dan",
     "#rule_type_description": "For a column with HXL tag indicating it contains indicators, check each cell has the same data type as the majority of others."
   },
   {
@@ -58,7 +58,7 @@
     "#valid_severity": "warning",
     "#valid_value+whitespace": "true",
     "#description": "Extra whitespace can affect reporting and visualisation",
-    "#rule_type": "Check for white space errors",
+    "#rule_type": "test-dan",
     "#rule_type_description": "Check each cell for leading and trailing white spaces and for more than one white space between words."
   },
   {
