@@ -1,169 +1,174 @@
 [
   {
-    "#meta+comment": "Always a date",
-    "#valid_tag": "#date",
-    "#valid_severity": "error",
-    "#valid_datatype": "date",
-    "#rule_type": "Check all values are dates",
-    "#rule_type_description": "Check each cell in the column contains a date."
-  },
-  {
-    "#meta+comment": "Always a number",
+    "#meta+comment": "Check all values are numbers",
     "#valid_tag": "#population,#affected,#inneed,#targeted,#reached,#indicator+num,#output+num,#value",
     "#valid_severity": "error",
     "#valid_datatype": "number",
-    "#rule_type": "Check all values are numbers",
-    "#rule_type_description": "Check each cell in the column contains a number."
+    "#description": "C. Value is not a number",
+    "#rule_type": "C. Check for consistent data types (dates, text, and numbers)",
+    "#rule_type_description": "Highlights cells that are of a different data type than defined or expected for the column."
   },
   {
-    "#meta+comment": "Gently point out numeric outliers",
-    "#valid_tag": "#population,#affected,#inneed,#targeted,#reached,#indicator+num,#output+num,#value",
-    "#valid_severity": "info",
-    "#valid_value+outliers": "true",
-    "#rule_type": "Check for numeric outliers",
-    "#rule_type_description": "Check each cell value to see if it is an outlier compared to others in the column."
+    "#meta+comment": "Check all values are dates",
+    "#valid_tag": "#date",
+    "#valid_severity": "error",
+    "#valid_datatype": "date",
+    "#description": "C. Value is not a date",
+    "#rule_type": "C. Check for consistent data types (dates, text, and numbers)",
+    "#rule_type_description": "Highlights cells that are of a different data type than defined or expected for the column."
   },
   {
-    "#meta+comment": "Spell-check highly repetitive values",
-    "#valid_tag": "#org,#sector,#subsector,#status,#beneficiary,#indicator+name,#access,#frequency,#item,#operations,#service,#channel,#modality,#currency,#impact,#group,#severity",
-    "#valid_severity": "warning",
-    "#valid_value+case": "true",
-    "#valid_value+spelling": "true",
-    "#description": "Rare value: check that it is correct",
-    "#rule_type": "Check spelling of highly repetitive values",
-    "#rule_type_description": "Check the spelling of multiple repeated cell values in the column."
-  },
-  {
-    "#meta+comment": "Placenames may benefit from spell checking",
-    "#valid_tag": "#region,#country,#adm1,#adm2,#adm3,#adm4,#adm5,#loc",
-    "#valid_severity": "info",
-    "#valid_value+case": "true",
-    "#valid_value+spelling": "true",
-    "#description": "Rare value: check that it is correct",
-    "#rule_type": "Check spelling of placenames",
-    "#rule_type_description": "For a column with HXL tag indicating it contains placenames, check the spelling of each placename."
-  },
-  {
-    "#meta+comment": "Look for consistent datatypes with indicators",
+    "#meta+comment": "Check datatype consistency of indicators",
     "#valid_tag": "#indicator",
     "#valid_severity": "warning",
     "#valid_datatype+consistent": "true",
-    "#description": "Possibly inconsistent datatype for this indicator",
-    "#rule_type": "Check datatype consistency of indicators",
-    "#rule_type_description": "For a column with HXL tag indicating it contains indicators, check each cell has the same data type as the majority of others."
+    "#description": "C. Possibly inconsistent datatype for this indicator",
+    "#rule_type": "C. Check for consistent data types (dates, text, and numbers)",
+    "#rule_type_description": "Highlights cells that are of a different data type than defined or expected for the column."
   },
   {
-    "#meta+comment": "Detect sloppy whitespace anywhere",
+    "#meta+comment": "Check for numeric outliers",
+    "#valid_tag": "#population,#affected,#inneed,#targeted,#reached,#indicator+num,#output+num,#value",
+    "#valid_severity": "info",
+    "#valid_value+outliers": "true",
+    "#description": "D. Number appears to be an outlier",
+    "#rule_type": "D. Check for values that deviate from the norm for a column",
+    "#rule_type_description": "Highlights cells with numeric values much higher or lower than most of the values in the column. For columns with frequently repeated text values, highlight cells that have an unusual value."
+  },
+  {
+    "#meta+comment": "Check spelling of highly repetitive values",
+    "#valid_tag": "#org,#sector,#subsector,#status,#beneficiary,#indicator+name,#access,#frequency,#item,#operations,#service,#channel,#modality,#currency,#impact,#group,#severity,#region,#country,#adm1,#adm2,#adm3,#adm4,#adm5,#loc",
+    "#valid_severity": "warning",
+    "#valid_value+case": "true",
+    "#valid_value+spelling": "true",
+    "#description": "D. Possibly inconsistent spelling",
+    "#rule_type": "D. Check for values that deviate from the norm for a column",
+    "#rule_type_description": "Highlights cells with numeric values much higher or lower than most of the values in the column. For columns with frequently repeated text values, highlight cells that have an unusual value."
+  },
+  {
+    "#meta+comment": "Check for white space errors",
     "#valid_tag": "#*",
     "#valid_severity": "warning",
     "#valid_value+whitespace": "true",
-    "#description": "Extra whitespace can affect reporting and visualisation",
-    "#rule_type": "Check for white space errors",
-    "#rule_type_description": "Check each cell for leading and trailing white spaces and for more than one white space between words."
+    "#description": "F. Leading, trailing or interword whitespace",
+    "#rule_type": "F. Check for white space errors",
+    "#rule_type_description": "Highlights cells with leading and trailing whitespaces and those with more than one whitespace between words."
   },
   {
+    "#meta+comment": "Check for valid p-codes",
     "#valid_tag": "#adm1+code",
     "#valid_severity": "error",
     "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/lbn-adm1.csv",
     "#valid_value+target_tag": "#adm1+code",
-    "#description": "Invalid p-code found",
-    "#rule_type": "Check for valid p-codes",
-    "#rule_type_description": "For a column with HXL tag indicating it contains p-codes, check the value in each cell is a p-code that can be found in the ITOS service."
+    "#description": "A. Invalid p-code found",
+    "#rule_type": "A. Check against official COD sources for valid p-codes and admin unit names",
+    "#rule_type_description": "Checks against the official COD for valid p-codes, administrative unit names, and consistency between the two."
   },
   {
+    "#meta+comment": "Check for valid admin unit names",
     "#valid_tag": "#adm1+name",
     "#valid_severity": "error",
     "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/lbn-adm1.csv",
     "#valid_value+target_tag": "#adm1+name+ref",
-    "#description": "Invalid admin unit name found",
-    "#rule_type": "Check for valid admin unit names",
-    "#rule_type_description": "For a column with HXL tag indicating it contains admin unit names, check the value in each cell is an admin unit name that can be found in the ITOS service."
+    "#description": "A. Invalid admin unit name found",
+    "#rule_type": "A. Check against official COD sources for valid p-codes and admin unit names",
+    "#rule_type_description": "Checks against the official COD for valid p-codes, administrative unit names, and consistency between the two."
   },
   {
+    "#meta+comment": "Check p-codes and admin unit names are consistent compared to official COD",
     "#valid_tag": "#adm1+code",
     "#valid_severity": "error",
     "#valid_correlation": "adm1+name",
     "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/lbn-adm1.csv",
-    "#description": "Invalid combination of p-code and administrative unit name found",
-    "#rule_type": "Check for consistent and valid p-code and name combinations",
-    "#rule_type_description": "For a column with HXL tag indicating it contains admin unit names and another with HXL tag indicating it contains p-codes, check the values in corresponding cells are consistent by comparing with the ITOS service."
+    "#description": "A. Inconsistency between P-code and administrative unit name compared to official COD source",
+    "#rule_type": "A. Check against official COD sources for valid p-codes and admin unit names",
+    "#rule_type_description": "Checks against the official COD for valid p-codes, administrative unit names, and consistency between the two."
   },
   {
+    "#meta+comment": "Check p-codes and placenames are internally consistent within file",
     "#valid_tag": "#adm1+code",
     "#valid_severity": "error",
     "#valid_correlation": "adm1+name",
-    "#description": "P-code and admin unit name combinations not consistent",
-    "#rule_type": "Check for consistent p-code and name combinations",
-    "#rule_type_description": "For a column with HXL tag indicating it contains admin unit names and another with HXL tag indicating it contains p-codes, check the values in corresponding cells are consistent."
+    "#description": "B. Internal inconsistency between P-code and placename within your file",
+    "#rule_type": "B. Checks p-codes and placenames are internally consistent within your file",
+    "#rule_type_description": "Checks that p-codes and placenames are internally consistent within your file (regardless of validity against the official COD)."
   },
   {
+    "#meta+comment": "Check for valid p-codes",
     "#valid_tag": "#adm2+code",
     "#valid_severity": "error",
     "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/lbn-adm2.csv",
     "#valid_value+target_tag": "#adm2+code",
-    "#description": "Invalid p-code found",
-    "#rule_type": "Check for valid p-codes",
-    "#rule_type_description": "For a column with HXL tag indicating it contains p-codes, check the value in each cell is a p-code that can be found in the ITOS service."
+    "#description": "A. Invalid p-code found",
+    "#rule_type": "A. Check against official COD sources for valid p-codes and admin unit names",
+    "#rule_type_description": "Checks against the official COD for valid p-codes, administrative unit names, and consistency between the two."
   },
   {
+    "#meta+comment": "Check for valid admin unit names",
     "#valid_tag": "#adm2+name",
     "#valid_severity": "error",
     "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/lbn-adm2.csv",
     "#valid_value+target_tag": "#adm2+name+ref",
-    "#description": "Invalid admin unit name found",
-    "#rule_type": "Check for valid admin unit names",
-    "#rule_type_description": "For a column with HXL tag indicating it contains admin unit names, check the value in each cell is an admin unit name that can be found in the ITOS service."
+    "#description": "A. Invalid admin unit name found",
+    "#rule_type": "A. Check against official COD sources for valid p-codes and admin unit names",
+    "#rule_type_description": "Checks against the official COD for valid p-codes, administrative unit names, and consistency between the two."
   },
   {
+    "#meta+comment": "Check p-codes and admin unit names are consistent compared to official COD",
     "#valid_tag": "#adm2+code",
     "#valid_severity": "error",
     "#valid_correlation": "adm2+name",
     "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/lbn-adm2.csv",
-    "#description": "Invalid combination of p-code and administrative unit name found",
-    "#rule_type": "Check for consistent and valid p-code and name combinations",
-    "#rule_type_description": "For a column with HXL tag indicating it contains admin unit names and another with HXL tag indicating it contains p-codes, check the values in corresponding cells are consistent by comparing with the ITOS service."
+    "#description": "A. Inconsistency between P-code and administrative unit name compared to official COD source",
+    "#rule_type": "A. Check against official COD sources for valid p-codes and admin unit names",
+    "#rule_type_description": "Checks against the official COD for valid p-codes, administrative unit names, and consistency between the two."
   },
   {
+    "#meta+comment": "Check p-codes and placenames are internally consistent within file",
     "#valid_tag": "#adm2+code",
     "#valid_severity": "error",
     "#valid_correlation": "adm2+name",
-    "#description": "P-code and admin unit name combinations not consistent",
-    "#rule_type": "Check for consistent p-code and name combinations",
-    "#rule_type_description": "For a column with HXL tag indicating it contains admin unit names and another with HXL tag indicating it contains p-codes, check the values in corresponding cells are consistent."
+    "#description": "B. Internal inconsistency between P-code and placename within your file",
+    "#rule_type": "B. Checks p-codes and placenames are internally consistent within your file",
+    "#rule_type_description": "Checks that p-codes and placenames are internally consistent within your file (regardless of validity against the official COD)."
   },
   {
+    "#meta+comment": "Check for valid p-codes",
     "#valid_tag": "#adm3+code",
     "#valid_severity": "error",
     "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/lbn-adm3.csv",
     "#valid_value+target_tag": "#adm3+code",
-    "#description": "Invalid p-code found",
-    "#rule_type": "Check for valid p-codes",
-    "#rule_type_description": "For a column with HXL tag indicating it contains p-codes, check the value in each cell is a p-code that can be found in the ITOS service."
+    "#description": "A. Invalid p-code found",
+    "#rule_type": "A. Check against official COD sources for valid p-codes and admin unit names",
+    "#rule_type_description": "Checks against the official COD for valid p-codes, administrative unit names, and consistency between the two."
   },
   {
+    "#meta+comment": "Check for valid admin unit names",
     "#valid_tag": "#adm3+name",
     "#valid_severity": "error",
     "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/lbn-adm3.csv",
     "#valid_value+target_tag": "#adm3+name+ref",
-    "#description": "Invalid admin unit name found",
-    "#rule_type": "Check for valid admin unit names",
-    "#rule_type_description": "For a column with HXL tag indicating it contains admin unit names, check the value in each cell is an admin unit name that can be found in the ITOS service."
+    "#description": "A. Invalid admin unit name found",
+    "#rule_type": "A. Check against official COD sources for valid p-codes and admin unit names",
+    "#rule_type_description": "Checks against the official COD for valid p-codes, administrative unit names, and consistency between the two."
   },
   {
+    "#meta+comment": "Check p-codes and admin unit names are consistent compared to official COD",
     "#valid_tag": "#adm3+code",
     "#valid_severity": "error",
     "#valid_correlation": "adm3+name",
     "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/lbn-adm3.csv",
-    "#description": "Invalid combination of p-code and administrative unit name found",
-    "#rule_type": "Check for consistent and valid p-code and name combinations",
-    "#rule_type_description": "For a column with HXL tag indicating it contains admin unit names and another with HXL tag indicating it contains p-codes, check the values in corresponding cells are consistent by comparing with the ITOS service."
+    "#description": "A. Inconsistency between P-code and administrative unit name compared to official COD source",
+    "#rule_type": "A. Check against official COD sources for valid p-codes and admin unit names",
+    "#rule_type_description": "Checks against the official COD for valid p-codes, administrative unit names, and consistency between the two."
   },
   {
+    "#meta+comment": "Check p-codes and placenames are internally consistent within file",
     "#valid_tag": "#adm3+code",
     "#valid_severity": "error",
     "#valid_correlation": "adm3+name",
-    "#description": "P-code and admin unit name combinations not consistent",
-    "#rule_type": "Check for consistent p-code and name combinations",
-    "#rule_type_description": "For a column with HXL tag indicating it contains admin unit names and another with HXL tag indicating it contains p-codes, check the values in corresponding cells are consistent."
+    "#description": "B. Internal inconsistency between P-code and placename within your file",
+    "#rule_type": "B. Checks p-codes and placenames are internally consistent within your file",
+    "#rule_type_description": "Checks that p-codes and placenames are internally consistent within your file (regardless of validity against the official COD)."
   }
 ]
