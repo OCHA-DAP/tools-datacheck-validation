@@ -1,60 +1,5 @@
 [
   {
-    "#meta+comment": "Check all values are numbers",
-    "#valid_tag": "#population,#affected,#inneed,#targeted,#reached,#indicator+num,#output+num,#value",
-    "#valid_severity": "error",
-    "#valid_datatype": "number",
-    "#description": "C. Value is not a number",
-    "#rule_type": "C. Check for consistent data types (dates, text, and numbers)",
-    "#rule_type_description": "Highlights cells that are of a different data type than defined or expected for the column."
-  },
-  {
-    "#meta+comment": "Check all values are dates",
-    "#valid_tag": "#date",
-    "#valid_severity": "error",
-    "#valid_datatype": "date",
-    "#description": "C. Value is not a date",
-    "#rule_type": "C. Check for consistent data types (dates, text, and numbers)",
-    "#rule_type_description": "Highlights cells that are of a different data type than defined or expected for the column."
-  },
-  {
-    "#meta+comment": "Check datatype consistency of indicators",
-    "#valid_tag": "#indicator",
-    "#valid_severity": "warning",
-    "#valid_datatype+consistent": "true",
-    "#description": "C. Possibly inconsistent datatype for this indicator",
-    "#rule_type": "C. Check for consistent data types (dates, text, and numbers)",
-    "#rule_type_description": "Highlights cells that are of a different data type than defined or expected for the column."
-  },
-  {
-    "#meta+comment": "Check for numeric outliers",
-    "#valid_tag": "#population,#affected,#inneed,#targeted,#reached,#indicator+num,#output+num,#value",
-    "#valid_severity": "info",
-    "#valid_value+outliers": "true",
-    "#description": "D. Number appears to be an outlier",
-    "#rule_type": "D. Check for values that deviate from the norm for a column",
-    "#rule_type_description": "Highlights cells with numeric values much higher or lower than most of the values in the column. For columns with frequently repeated text values, highlight cells that have an unusual value."
-  },
-  {
-    "#meta+comment": "Check spelling of highly repetitive values",
-    "#valid_tag": "#org,#sector,#subsector,#status,#beneficiary,#indicator+name,#access,#frequency,#item,#operations,#service,#channel,#modality,#currency,#impact,#group,#severity,#region,#country,#adm1,#adm2,#adm3,#adm4,#adm5,#loc",
-    "#valid_severity": "warning",
-    "#valid_value+case": "true",
-    "#valid_value+spelling": "true",
-    "#description": "D. Possibly inconsistent spelling",
-    "#rule_type": "D. Check for values that deviate from the norm for a column",
-    "#rule_type_description": "Highlights cells with numeric values much higher or lower than most of the values in the column. For columns with frequently repeated text values, highlight cells that have an unusual value."
-  },
-  {
-    "#meta+comment": "Check for white space errors",
-    "#valid_tag": "#*",
-    "#valid_severity": "warning",
-    "#valid_value+whitespace": "true",
-    "#description": "F. Leading, trailing or interword whitespace",
-    "#rule_type": "F. Check for white space errors",
-    "#rule_type_description": "Highlights cells with leading and trailing whitespaces and those with more than one whitespace between words."
-  },
-  {
     "#meta+comment": "Check for valid p-codes",
     "#valid_tag": "#adm1+code",
     "#valid_severity": "error",
@@ -209,5 +154,60 @@
     "#description": "B. Internal inconsistency between P-code and placename within your file",
     "#rule_type": "B. Checks p-codes and placenames are internally consistent within your file",
     "#rule_type_description": "Checks that p-codes and placenames are internally consistent within your file (regardless of validity against the official COD)."
+  },
+  {
+    "#meta+comment": "Check all values are numbers",
+    "#valid_tag": "#population,#affected,#inneed,#targeted,#reached,#indicator+num,#output+num,#value",
+    "#valid_severity": "error",
+    "#valid_datatype": "number",
+    "#description": "C. Value is not a number",
+    "#rule_type": "C. Check for consistent data types (dates, text, and numbers)",
+    "#rule_type_description": "Highlights cells that are of a different data type than defined or expected for the column."
+  },
+  {
+    "#meta+comment": "Check all values are dates",
+    "#valid_tag": "#date",
+    "#valid_severity": "error",
+    "#valid_datatype": "date",
+    "#description": "C. Value is not a date",
+    "#rule_type": "C. Check for consistent data types (dates, text, and numbers)",
+    "#rule_type_description": "Highlights cells that are of a different data type than defined or expected for the column."
+  },
+  {
+    "#meta+comment": "Check datatype consistency of indicators",
+    "#valid_tag": "#indicator",
+    "#valid_severity": "warning",
+    "#valid_datatype+consistent": "true",
+    "#description": "C. Possibly inconsistent datatype for this indicator",
+    "#rule_type": "C. Check for consistent data types (dates, text, and numbers)",
+    "#rule_type_description": "Highlights cells that are of a different data type than defined or expected for the column."
+  },
+  {
+    "#meta+comment": "Check for numeric outliers",
+    "#valid_tag": "#population,#affected,#inneed,#targeted,#reached,#indicator+num,#output+num,#value",
+    "#valid_severity": "info",
+    "#valid_value+outliers": "true",
+    "#description": "D. Number appears to be an outlier",
+    "#rule_type": "D. Check for values that deviate from the norm for a column",
+    "#rule_type_description": "Highlights cells with numeric values much higher or lower than most of the values in the column. For columns with frequently repeated text values, highlight cells that have an unusual value."
+  },
+  {
+    "#meta+comment": "Check spelling of highly repetitive values",
+    "#valid_tag": "#org,#sector,#subsector,#status,#beneficiary,#indicator+name,#access,#frequency,#item,#operations,#service,#channel,#modality,#currency,#impact,#group,#severity,#region,#country,#adm1,#adm2,#adm3,#adm4,#adm5,#loc",
+    "#valid_severity": "warning",
+    "#valid_value+case": "true",
+    "#valid_value+spelling": "true",
+    "#description": "D. Possibly inconsistent spelling",
+    "#rule_type": "D. Check for values that deviate from the norm for a column",
+    "#rule_type_description": "Highlights cells with numeric values much higher or lower than most of the values in the column. For columns with frequently repeated text values, highlight cells that have an unusual value."
+  },
+  {
+    "#meta+comment": "Check for white space errors",
+    "#valid_tag": "#*",
+    "#valid_severity": "warning",
+    "#valid_value+whitespace": "true",
+    "#description": "E. Leading, trailing or interword whitespace",
+    "#rule_type": "E. Check for white space errors",
+    "#rule_type_description": "Highlights cells with leading and trailing whitespaces and those with more than one whitespace between words."
   }
 ]
