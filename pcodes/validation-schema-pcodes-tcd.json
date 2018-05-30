@@ -118,7 +118,7 @@
   },
   {
     "#meta+comment": "Check all values are numbers",
-    "#valid_tag": "#population,#affected,#inneed,#targeted,#reached,#indicator+num,#output+num,#value",
+    "#valid_tag": "#population,#affected,#inneed,#targeted,#reached,#value,#*+num",
     "#valid_severity": "error",
     "#valid_datatype": "number",
     "#description": "C. Value is not a number",
