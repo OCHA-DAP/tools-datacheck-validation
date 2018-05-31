@@ -196,7 +196,7 @@
   },
   {
     "#meta+comment": "Check all values are numbers",
-    "#valid_tag": "#population-type,#affected-type,#inneed-type,#targeted-type,#reached-type,#value-type,#*+num",
+    "#valid_tag": "#population-type-description,#affected-type-description,#inneed-type-description,#targeted-type-description,#reached-type-description,#value-type-description,#*+num",
     "#valid_severity": "error",
     "#valid_datatype": "number",
     "#description": "C. Value is not a number",
@@ -223,7 +223,7 @@
   },
   {
     "#meta+comment": "Check for numeric outliers",
-    "#valid_tag": "#population,#affected,#inneed,#targeted,#reached,#indicator+num,#output+num,#value",
+    "#valid_tag": "#population-type-description,#affected-type-description,#inneed-type-description,#targeted-type-description,#reached-type-description,#value-type-description,#*+num",
     "#valid_severity": "info",
     "#valid_value+outliers": "true",
     "#description": "D. Number appears to be an outlier",
