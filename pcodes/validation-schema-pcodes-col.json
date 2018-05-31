@@ -5,8 +5,8 @@
     "#valid_severity": "error",
     "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/col-adm1.csv",
     "#valid_value+target_tag": "#adm1+code",
-    "#description": "A. Invalid p-code found",
-    "#rule_type": "A. Check against official COD sources for valid p-codes and admin unit names",
+    "#description": "Invalid p-code found [A]",
+    "#rule_type": "[A] Check against official COD sources for valid p-codes and admin unit names",
     "#rule_type_description": "Checks against the official COD for valid p-codes, administrative unit names, and consistency between the two."
   },
   {
@@ -15,8 +15,8 @@
     "#valid_severity": "error",
     "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/col-adm1.csv",
     "#valid_value+target_tag": "#adm1+name+ref",
-    "#description": "A. Invalid admin unit name found",
-    "#rule_type": "A. Check against official COD sources for valid p-codes and admin unit names",
+    "#description": "Invalid admin unit name found [A]",
+    "#rule_type": "[A] Check against official COD sources for valid p-codes and admin unit names",
     "#rule_type_description": "Checks against the official COD for valid p-codes, administrative unit names, and consistency between the two."
   },
   {
@@ -25,8 +25,8 @@
     "#valid_severity": "error",
     "#valid_correlation": "adm1+name",
     "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/col-adm1.csv",
-    "#description": "A. Inconsistency between P-code and administrative unit name compared to official COD source",
-    "#rule_type": "A. Check against official COD sources for valid p-codes and admin unit names",
+    "#description": "Inconsistency between P-code and administrative unit name compared to official COD source [A]",
+    "#rule_type": "[A] Check against official COD sources for valid p-codes and admin unit names",
     "#rule_type_description": "Checks against the official COD for valid p-codes, administrative unit names, and consistency between the two."
   },
   {
@@ -34,8 +34,8 @@
     "#valid_tag": "#adm1+code",
     "#valid_severity": "error",
     "#valid_correlation": "adm1+name",
-    "#description": "B. Internal inconsistency between P-code and placename within your file",
-    "#rule_type": "B. Checks p-codes and placenames are internally consistent within your file",
+    "#description": "Internal inconsistency between P-code and placename within your file [B]",
+    "#rule_type": "[B] Checks p-codes and placenames are internally consistent within your file",
     "#rule_type_description": "Checks that p-codes and placenames are internally consistent within your file (regardless of validity against the official COD)."
   },
   {
@@ -44,8 +44,8 @@
     "#valid_severity": "error",
     "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/col-adm2.csv",
     "#valid_value+target_tag": "#adm2+code",
-    "#description": "A. Invalid p-code found",
-    "#rule_type": "A. Check against official COD sources for valid p-codes and admin unit names",
+    "#description": "Invalid p-code found [A]",
+    "#rule_type": "[A] Check against official COD sources for valid p-codes and admin unit names",
     "#rule_type_description": "Checks against the official COD for valid p-codes, administrative unit names, and consistency between the two."
   },
   {
@@ -54,8 +54,8 @@
     "#valid_severity": "error",
     "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/col-adm2.csv",
     "#valid_value+target_tag": "#adm2+name+ref",
-    "#description": "A. Invalid admin unit name found",
-    "#rule_type": "A. Check against official COD sources for valid p-codes and admin unit names",
+    "#description": "Invalid admin unit name found [A]",
+    "#rule_type": "[A] Check against official COD sources for valid p-codes and admin unit names",
     "#rule_type_description": "Checks against the official COD for valid p-codes, administrative unit names, and consistency between the two."
   },
   {
@@ -64,8 +64,8 @@
     "#valid_severity": "error",
     "#valid_correlation": "adm2+name",
     "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/col-adm2.csv",
-    "#description": "A. Inconsistency between P-code and administrative unit name compared to official COD source",
-    "#rule_type": "A. Check against official COD sources for valid p-codes and admin unit names",
+    "#description": "Inconsistency between P-code and administrative unit name compared to official COD source [A]",
+    "#rule_type": "[A] Check against official COD sources for valid p-codes and admin unit names",
     "#rule_type_description": "Checks against the official COD for valid p-codes, administrative unit names, and consistency between the two."
   },
   {
@@ -73,8 +73,8 @@
     "#valid_tag": "#adm2+code",
     "#valid_severity": "error",
     "#valid_correlation": "adm2+name",
-    "#description": "B. Internal inconsistency between P-code and placename within your file",
-    "#rule_type": "B. Checks p-codes and placenames are internally consistent within your file",
+    "#description": "Internal inconsistency between P-code and placename within your file [B]",
+    "#rule_type": "[B] Checks p-codes and placenames are internally consistent within your file",
     "#rule_type_description": "Checks that p-codes and placenames are internally consistent within your file (regardless of validity against the official COD)."
   },
   {
@@ -82,8 +82,8 @@
     "#valid_tag": "#population-type-description,#affected-type-description,#inneed-type-description,#targeted-type-description,#reached-type-description,#value-type-description,#*+num",
     "#valid_severity": "error",
     "#valid_datatype": "number",
-    "#description": "C. Value is not a number",
-    "#rule_type": "C. Check for consistent data types (dates, text, and numbers)",
+    "#description": "Value is not a number [C]",
+    "#rule_type": "[C] Check for consistent data types (dates, text, and numbers)",
     "#rule_type_description": "Highlights cells that are of a different data type than defined or expected for the column."
   },
   {
@@ -91,8 +91,8 @@
     "#valid_tag": "#date",
     "#valid_severity": "error",
     "#valid_datatype": "date",
-    "#description": "C. Value is not a date",
-    "#rule_type": "C. Check for consistent data types (dates, text, and numbers)",
+    "#description": "Value is not a date [C]",
+    "#rule_type": "[C] Check for consistent data types (dates, text, and numbers)",
     "#rule_type_description": "Highlights cells that are of a different data type than defined or expected for the column."
   },
   {
@@ -100,8 +100,8 @@
     "#valid_tag": "#indicator",
     "#valid_severity": "warning",
     "#valid_datatype+consistent": "true",
-    "#description": "C. Possibly inconsistent datatype for this indicator",
-    "#rule_type": "C. Check for consistent data types (dates, text, and numbers)",
+    "#description": "Possibly inconsistent datatype for this indicator [C]",
+    "#rule_type": "[C] Check for consistent data types (dates, text, and numbers)",
     "#rule_type_description": "Highlights cells that are of a different data type than defined or expected for the column."
   },
   {
@@ -109,8 +109,8 @@
     "#valid_tag": "#population-type-description,#affected-type-description,#inneed-type-description,#targeted-type-description,#reached-type-description,#value-type-description,#*+num",
     "#valid_severity": "info",
     "#valid_value+outliers": "true",
-    "#description": "D. Number appears to be an outlier",
-    "#rule_type": "D. Check for values that deviate from the norm for a column",
+    "#description": "Number appears to be an outlier [D]",
+    "#rule_type": "[D] Check for values that deviate from the norm for a column",
     "#rule_type_description": "Highlights cells with numeric values much higher or lower than most of the values in the column. For columns with frequently repeated text values, highlight cells that have an unusual value."
   },
   {
@@ -119,8 +119,8 @@
     "#valid_severity": "warning",
     "#valid_value+case": "true",
     "#valid_value+spelling": "true",
-    "#description": "D. Possibly inconsistent spelling",
-    "#rule_type": "D. Check for values that deviate from the norm for a column",
+    "#description": "Possibly inconsistent spelling [D]",
+    "#rule_type": "[D] Check for values that deviate from the norm for a column",
     "#rule_type_description": "Highlights cells with numeric values much higher or lower than most of the values in the column. For columns with frequently repeated text values, highlight cells that have an unusual value."
   },
   {
@@ -128,8 +128,8 @@
     "#valid_tag": "#*",
     "#valid_severity": "warning",
     "#valid_value+whitespace": "true",
-    "#description": "E. Leading, trailing or interword whitespace",
-    "#rule_type": "E. Check for white space errors",
+    "#description": "Leading, trailing or interword whitespace [E]",
+    "#rule_type": "[E] Check for white space errors",
     "#rule_type_description": "Highlights cells with leading and trailing whitespaces and those with more than one whitespace between words."
   }
 ]
