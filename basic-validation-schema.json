@@ -4,8 +4,8 @@
     "#valid_tag": "#population-type-description,#affected-type-description,#inneed-type-description,#targeted-type-description,#reached-type-description,#value-type-description,#*+num",
     "#valid_severity": "error",
     "#valid_datatype": "number",
-    "#description": "Value is not a number [A]",
-    "#rule_type": "[A] Check for consistent data types (dates, text, and numbers)",
+    "#description": "Value is not a number [a]",
+    "#rule_type": "[a] Check for consistent data types (dates, text, and numbers)",
     "#rule_type_description": "Highlights cells that are of a different data type than defined or expected for the column."
   },
   {
@@ -13,8 +13,8 @@
     "#valid_tag": "#date",
     "#valid_severity": "error",
     "#valid_datatype": "date",
-    "#description": "Value is not a date [A]",
-    "#rule_type": "[A] Check for consistent data types (dates, text, and numbers)",
+    "#description": "Value is not a date [a]",
+    "#rule_type": "[a] Check for consistent data types (dates, text, and numbers)",
     "#rule_type_description": "Highlights cells that are of a different data type than defined or expected for the column."
   },
   {
@@ -22,8 +22,8 @@
     "#valid_tag": "#indicator",
     "#valid_severity": "warning",
     "#valid_datatype+consistent": "true",
-    "#description": "Possibly inconsistent datatype for this indicator [A]",
-    "#rule_type": "[A] Check for consistent data types (dates, text, and numbers)",
+    "#description": "Possibly inconsistent datatype for this indicator [a]",
+    "#rule_type": "[a] Check for consistent data types (dates, text, and numbers)",
     "#rule_type_description": "Highlights cells that are of a different data type than defined or expected for the column."
   },
   {
@@ -31,8 +31,8 @@
     "#valid_tag": "#population-type-description,#affected-type-description,#inneed-type-description,#targeted-type-description,#reached-type-description,#value-type-description,#*+num",
     "#valid_severity": "info",
     "#valid_value+outliers": "true",
-    "#description": "Number appears to be an outlier [B]",
-    "#rule_type": "[B] Check for values that deviate from the norm for a column",
+    "#description": "Number appears to be an outlier [b]",
+    "#rule_type": "[b] Check for values that deviate from the norm for a column",
     "#rule_type_description": "Highlights cells with numeric values much higher or lower than most of the values in the column. For columns with frequently repeated text values, highlight cells that have an unusual value."
   },
   {
@@ -41,8 +41,8 @@
     "#valid_severity": "warning",
     "#valid_value+case": "true",
     "#valid_value+spelling": "true",
-    "#description": "Possibly inconsistent spelling [B]",
-    "#rule_type": "[B] Check for values that deviate from the norm for a column",
+    "#description": "Possibly inconsistent spelling [b]",
+    "#rule_type": "[b] Check for values that deviate from the norm for a column",
     "#rule_type_description": "Highlights cells with numeric values much higher or lower than most of the values in the column. For columns with frequently repeated text values, highlight cells that have an unusual value."
   },
   {
@@ -50,8 +50,8 @@
     "#valid_tag": "#*",
     "#valid_severity": "warning",
     "#valid_value+whitespace": "true",
-    "#description": "Leading, trailing or interword whitespace [C]",
-    "#rule_type": "[C] Check for white space errors",
+    "#description": "Leading, trailing or interword whitespace [c]",
+    "#rule_type": "[c] Check for white space errors",
     "#rule_type_description": "Highlights cells with leading and trailing whitespaces and those with more than one whitespace between words."
   }
 ]
