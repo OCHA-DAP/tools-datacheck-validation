@@ -72,7 +72,7 @@
     "#meta+comment": "Check p-codes and placenames are internally consistent within file",
     "#valid_tag": "#adm2+code",
     "#valid_severity": "error",
-    "#valid_correlation": "adm2+name",
+    "#valid_correlation": "adm2-name",
     "#description": "Internal inconsistency between P-code and placename within your file [b]",
     "#rule_type": "[b] Check p-codes and placenames are internally consistent within your file",
     "#rule_type_description": "Checks that p-codes and placenames are internally consistent within your file (regardless of validity against the official COD)."
@@ -111,7 +111,7 @@
     "#meta+comment": "Check p-codes and placenames are internally consistent within file",
     "#valid_tag": "#adm3+code",
     "#valid_severity": "error",
-    "#valid_correlation": "adm3+name",
+    "#valid_correlation": "adm3-name",
     "#description": "Internal inconsistency between P-code and placename within your file [b]",
     "#rule_type": "[b] Check p-codes and placenames are internally consistent within your file",
     "#rule_type_description": "Checks that p-codes and placenames are internally consistent within your file (regardless of validity against the official COD)."
@@ -150,7 +150,7 @@
     "#meta+comment": "Check p-codes and placenames are internally consistent within file",
     "#valid_tag": "#adm4+code",
     "#valid_severity": "error",
-    "#valid_correlation": "adm4+name",
+    "#valid_correlation": "adm4-name",
     "#description": "Internal inconsistency between P-code and placename within your file [b]",
     "#rule_type": "[b] Check p-codes and placenames are internally consistent within your file",
     "#rule_type_description": "Checks that p-codes and placenames are internally consistent within your file (regardless of validity against the official COD)."
