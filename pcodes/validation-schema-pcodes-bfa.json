@@ -78,6 +78,45 @@
     "#rule_type_description": "Checks that p-codes and placenames are internally consistent within your file (regardless of validity against the official COD)."
   },
   {
+    "#meta+comment": "Check for valid p-codes",
+    "#valid_tag": "#adm3+code",
+    "#valid_severity": "error",
+    "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/bfa-adm3.csv",
+    "#valid_value+target_tag": "#adm3+code",
+    "#description": "Invalid p-code found [a]",
+    "#rule_type": "[a] Check against official COD sources for valid p-codes and admin unit names",
+    "#rule_type_description": "Checks against the official COD for valid p-codes, administrative unit names, and consistency between the two."
+  },
+  {
+    "#meta+comment": "Check for valid admin unit names",
+    "#valid_tag": "#adm3+name",
+    "#valid_severity": "error",
+    "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/bfa-adm3.csv",
+    "#valid_value+target_tag": "#adm3+name+ref",
+    "#description": "Invalid admin unit name found [a]",
+    "#rule_type": "[a] Check against official COD sources for valid p-codes and admin unit names",
+    "#rule_type_description": "Checks against the official COD for valid p-codes, administrative unit names, and consistency between the two."
+  },
+  {
+    "#meta+comment": "Check p-codes and admin unit names are consistent compared to official COD",
+    "#valid_tag": "#adm3+code",
+    "#valid_severity": "error",
+    "#valid_correlation": "adm3+name",
+    "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/bfa-adm3.csv",
+    "#description": "Inconsistency between P-code and administrative unit name compared to official COD source [a]",
+    "#rule_type": "[a] Check against official COD sources for valid p-codes and admin unit names",
+    "#rule_type_description": "Checks against the official COD for valid p-codes, administrative unit names, and consistency between the two."
+  },
+  {
+    "#meta+comment": "Check p-codes and placenames are internally consistent within file",
+    "#valid_tag": "#adm3+code",
+    "#valid_severity": "error",
+    "#valid_correlation": "adm3+name",
+    "#description": "Internal inconsistency between P-code and placename within your file [b]",
+    "#rule_type": "[b] Check p-codes and placenames are internally consistent within your file",
+    "#rule_type_description": "Checks that p-codes and placenames are internally consistent within your file (regardless of validity against the official COD)."
+  },
+  {
     "#meta+comment": "Check all values are numbers",
     "#valid_tag": "#population-type-description,#affected-type-description,#inneed-type-description,#targeted-type-description,#reached-type-description,#value-type-description,#*+num",
     "#valid_severity": "error",
