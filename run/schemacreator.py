@@ -19,7 +19,7 @@ def get_rule(rule_template, iso3, adm=None):
 
 
 def schemacreator(start_url, base_url, template_path, output_folder):
-    with Download() as downloader:
+    with Download(user_agent='test') as downloader:
         response = downloader.download(start_url)
         countryisos = set()
         for service in response.json()['services']:

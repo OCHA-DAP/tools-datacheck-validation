@@ -1,13 +1,13 @@
 language: python
 python:
-  - '3.4'
+  - '3.6'
 
 #
 # Command to install dependencies.
 #
 install:
   - ls -l pcodes/*json
-  - pip install coveralls
+  - pip install codecov
   - pip install -r test-requirements.txt
 
 #
@@ -19,7 +19,7 @@ before_script: py.test --cov-config .coveragerc --cov-report= --cov=.
 # Send coverage report to coveralls.io and run main script
 #
 script:
-  - coveralls
+  - codecov
   - cd run
   - python3 schemacreator.py
 
