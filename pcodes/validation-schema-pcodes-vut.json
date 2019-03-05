@@ -20,16 +20,6 @@
     "#rule_type_description": "Checks against the official COD for valid p-codes, administrative unit names, and consistency between the two."
   },
   {
-    "#meta+comment": "Check p-codes and admin unit names are consistent compared to official COD",
-    "#valid_tag": "#adm1+code",
-    "#valid_severity": "error",
-    "#valid_correlation": "adm1+name",
-    "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/vut-adm1.csv",
-    "#description": "Inconsistency between P-code and administrative unit name compared to official COD source [a]",
-    "#rule_type": "[a] Check against official COD sources for valid p-codes and admin unit names",
-    "#rule_type_description": "Checks against the official COD for valid p-codes, administrative unit names, and consistency between the two."
-  },
-  {
     "#meta+comment": "Check p-codes and placenames are internally consistent within file",
     "#valid_tag": "#adm1+code",
     "#valid_severity": "error",
@@ -55,16 +45,6 @@
     "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/vut-adm2.csv",
     "#valid_value+target_tag": "#adm2+name+ref",
     "#description": "Invalid admin unit name found [a]",
-    "#rule_type": "[a] Check against official COD sources for valid p-codes and admin unit names",
-    "#rule_type_description": "Checks against the official COD for valid p-codes, administrative unit names, and consistency between the two."
-  },
-  {
-    "#meta+comment": "Check p-codes and admin unit names are consistent compared to official COD",
-    "#valid_tag": "#adm2+code",
-    "#valid_severity": "error",
-    "#valid_correlation": "adm2+name",
-    "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/vut-adm2.csv",
-    "#description": "Inconsistency between P-code and administrative unit name compared to official COD source [a]",
     "#rule_type": "[a] Check against official COD sources for valid p-codes and admin unit names",
     "#rule_type_description": "Checks against the official COD for valid p-codes, administrative unit names, and consistency between the two."
   },
