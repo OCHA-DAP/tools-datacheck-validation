@@ -2,7 +2,7 @@
   {
     "#valid_tag": "#adm1+code",
     "#valid_severity": "error",
-    "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/gin-adm1.csv",
+    "#valid_value+url": "https://proxy.hxlstandard.org/pcodes/gin-adm1.csv",
     "#valid_value+target_tag": "#adm1+code",
     "#description": "Adm1 that doesn't match itos service"
   },
@@ -15,7 +15,7 @@
   {
     "#valid_tag": "#adm2+code",
     "#valid_severity": "error",
-    "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/gin-adm2.csv",
+    "#valid_value+url": "https://proxy.hxlstandard.org/pcodes/gin-adm2.csv",
     "#valid_value+target_tag": "#adm2+code",
     "#description": "Adm2 that doesn't match itos service"
   },
@@ -28,7 +28,7 @@
   {
     "#valid_tag": "#adm3+code",
     "#valid_severity": "error",
-    "#valid_value+url": "http://beta.proxy.hxlstandard.org/pcodes/gin-adm3.csv",
+    "#valid_value+url": "https://proxy.hxlstandard.org/pcodes/gin-adm3.csv",
     "#valid_value+target_tag": "#adm3+code",
     "#description": "Adm3 that doesn't match itos service"
   },
